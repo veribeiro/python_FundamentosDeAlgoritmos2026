@@ -10,4 +10,12 @@ Conteúdos:
 - Entrada de dados (input)
 - Operadores aritméticos
 
-  
+Aula 03 -> Exercícios de 1 a 8 <br>  
+Conteúdos:
+- Operador relaciona (>,>=,<,<=)
+- Estrutura condicional simples (if)
+- Estrutura condicional completa (if, elif, else)
+
+Aula 04 
+Conteúdos:
+- Operadores lógicos
