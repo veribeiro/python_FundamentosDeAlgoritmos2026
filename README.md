@@ -18,6 +18,6 @@ Conteúdos:
 - Estrutura condicional completa (if, elif, else)
 <br>
 
-Aula 04 
+Aula 04 -> Exercícios de 1 a 5
 Conteúdos:
-- Operadores lógicos
+- Operadores lógicos (and, or)
