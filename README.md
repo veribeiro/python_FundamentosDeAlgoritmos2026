@@ -21,7 +21,8 @@ Conteúdos:
 Aula 04 -> Exercícios de 1 a 5
 Conteúdos:
 - Operadores lógicos (and, or)
+<br>
 
-Aula 05 
+Aula 05 -> Exercícios de 1 a 11
 Conteúdos:
 - Estruturas de Repetição (while, for)
