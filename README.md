@@ -26,3 +26,8 @@ Conteúdos:
 Aula 05 -> Exercícios de 1 a 11
 Conteúdos:
 - Estruturas de Repetição (while, for)
+<br>
+
+Aula 08 -> Exercícios de 1 a 8
+Conteúdos:
+- Listas e tuplas (lista=[])
