@@ -30,4 +30,4 @@ Conteúdos:
 
 Aula 08 -> Exercícios de 1 a 8
 Conteúdos:
-- Listas e tuplas (lista=[])
+- Listas e tuplas (lista=[], tupla=())
