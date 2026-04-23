@@ -31,3 +31,9 @@ Conteúdos:
 Aula 08 -> Exercícios de 1 a 8
 Conteúdos:
 - Listas e tuplas (lista=[], tupla=())
+<br>
+
+Aula 09 -> Exercícios de 1 a 6
+Conteúdos:
+- Listas (concatenação, repetição, função map(), função filter() e compreensão de lista)
+
