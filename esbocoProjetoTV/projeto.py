@@ -1,31 +1,210 @@
 
-#Lista de livros
-livros = ['Quarta Asa', 'Trono de vidro', 'Acotar', 'Powerless', 'Orgulho e preconceito', 'Harry Potter', 'O Príncipe Cruel',
-        'A empregada', 'Verity', 'Assistente do vilão']
+#Dicionário de livros
 
-# Parte usuário função
+livros = {
+    "Quarta Asa": {
+        "Sinopse": "Em Quarta Asa, best-seller #1 do The New York Times,  uma jovem precisa sobreviver ao treinamento em uma escola de elite para poderosos cavaleiros de dragões, onde a única regra é se formar... ou morrer tentando.  \n \n"
+        "Violet Sorrengail, uma jovem de vinte anos, estava destinada a entrar na Divisão dos Escribas, levando uma vida relativamente tranquila entre os livros e as aulas de História. No entanto, a general comandante das forças de Navarre - também conhecida como sua mãe, durona como as garras de um dragão, ordena que Violet se junte às centenas de candidatos que buscam se tornar a elite de seu país: cavaleiros de dragões. \n \n"
+        "* Obs: Sinopse feita pela editora 'Planeta Minotauro'",
+        "Autor": "Rebecca Yarros",
+        "Duração": "2h 50m",
+        "Genero": "Ficção, fantasia"
+    },
+    "Trono de Vidro":{
+        "Sinopse": "'LETAL. LEAL. LENDÁRIA. \n\n"
+        "Celaena Sardothien fará de tudo para conquistar a liberdade. Entretanto, o castelo de vidro esconde muitos segredos e abriga um mal do qual ela deseja escapar. Tornar-se a Campeã do Rei pode ser a chave da libertação de Celaena, mas a que custo?' \n \n"
+        "* Obs: Sinopse feita pela editora 'Galera'",
+        "Autor": "Sarah J. Maas",
+        "Duração": "2h 30m",
+        "Genero": "Ação e Aventura, Fantasia Épica"
+    },
+    "Acotar":{
+        "Sinopse":"'UMA CAÇADORA DETERMINADA. UM FEÉRICO AMALDIÇOADO. E UM CORAÇÃO MORTAL QUE PODE SER A SALVAÇÃO DE UM REINO MÁGICO.' \n \n"
+        "* Obs: Sinopse feita pela editora 'Galera'",
+        "Autor": "Sarah J. Maas",
+        "Duração": "2h 50m",
+        "Genero": "Fantasia romântica, fantasia adulta"
+    },
+    "Powerless":{
+        "Sinopse":"'Kai é um príncipe poderoso, treinado para matar. Paedyn é uma garota comum que sobrevive fingindo ter poderes. \n \n"
+        "Quando os caminhos dos dois se encontram por acaso. eles não imaginam que serão oponentes em uma competição mágica brutal. Nem que se verão envolvidos em um romance proibido e perigoso tão impossível quanto inevitável.' \n \n"
+        "* Obs: Sinopse feita pela editora 'Rocco'",
+        "Autor": "Lauren Roberts",
+        "Duração": "2h 30m",
+        "Genero": "Fantasia"
+    },
+    "Orgulho e preconceito":{
+        "Sinopse":"'Orgulho e Preconceito é um dos mais aclamados romances da escritora inglesa Jane Austen. Publicado em 1813, revela como era a sociedade da época, quando os relacionamentos se desenrolavam de maneira mais lenta e romântica, no ritmo das cartas levadas por mensageiros a cavalo. \n \n"
+        "Nesse mundo, o sonho da Sra. Bennet era casar bem suas cinco filhas: Jane, Elizabeth, Mary, Kitty e Lydia. Entre as irmãs, destaca-se Elizabeth, a Lizzy, que se depara com um turbilhão de sentimentos diante do orgulho e preconceito que mascaram a realidade. Trata-se de um clássico que, mesmo após duzentos anos desde a sua primeira publicação,continua a encantar milhões de leitores ao redor do mundo.' \n \n"
+        "* Obs: Sinopse feita pela editora 'Camelot'",
+        "Autor": "Jane Austen",
+        "Duração": "1h 40m",
+        "Genero": "Drama, Comédia, Romance"
+    },
+    "Harry Potter":{
+        "Sinopse":"'HARRY POTTER nunca tinha ouvido falar em Hogwarts até o momento em que as CARTAS começam a aparecer no capacho do número 4 da rua dos Alfeneiros. \n \n"
+        "Endereçadas com TINTA VERDE em pergaminho amarelado com um LACRE PÚRPURA, elas são rapidamente confiscadas por seus tios TERRÍVEIS. E então, no décimo primeiro aniversário de Harry, um homem GIGANTESCO com olhos luzindo como besouros negros chamado RÚBEO HAGRID entra intempestivamente com uma notícia ASSOMBROSA: \n \n"
+        "Harry Potter é um bruxo e tem uma vaga na ESCOLA DE MAGIA E BRUXARIA DE HOGWARTS. \n \n"
+        "Uma aventura inacreditável está para começar!' \n \n"
+        "* Obs: Sinopse feita pela editora 'ROCCO'",
+        "Autor": "J.K. Rowling",
+        "Duração": "2h 00m",
+        "Genero": "Fantasia, Ficção"
+    },
+    "O principe cruel":{
+        "Sinopse":"'Da autora de best-sellers nº 1 do The New York Times , Holly Black, O prínicipe cruel  é o primeiro livro da envolvente série O Povo do Ar sobre uma garota mortal que se vê presa em uma teia de intrigas de fadas reais. \n \n"
+        "Jude tinha apenas sete anos quando seus pais foram brutalmente assasinados e ela e as irmãs levadas para viver no traiçoeiro Reino das Fadas. Dez anos depois, tudo o que Jude quer é se encaixar, mesmo sendo uma garota mortal. Mas todos os feéricos parecem desprezar os humanos... Especialmente o príncipe Cardan, o mais jovem e mais perverso dos filhos do Grande Rei de Elfhame. \n \n"
+        "Para conquistar o tão desejado lugar na Corte, Jude precisa desafiar o príncipe - e enfrentar as consequências do ato.' \n \n"
+        "* Obs: Sinopse feita pela editora 'Galera'",
+        "Autor": "Holly Black",
+        "Duração": "1h 30m",
+        "Genero": "Fantasia"
+    },
+    "A empregada":{
+        "Sinopse":"'147 SEMANAS NA LISTA DE MAIS VENDIDOS DO THE NEW YORK TIMES \n \n"
+        "Uma história que vai surpreender até os leitores de suspense mais calejados. \n \n"
+        "Todos os dias, Millie limpa a casa de Nina e Andrew Winchester de cima a baixo. Pega a filha deles na escola. Prepara refeições deliciosas para a família toda antes de poder se recolher e enfim comer o próprio jantar, sozinha em seu quarto minúsculo e claustrofóbico no sótão. \n \n"
+        "Afinal, com seu passado problemático, ela tem mais é que agradecer por ter conseguido esse emprego. \n \n"
+        "Logo os Winchesters vão descobrir que não fazem a menor ideia de quem Millie é de verdade. Nem do que ela é capaz de fazer.' \n \n"
+        "* Obs: Sinopse feita pela editora 'Arqueiro'",
+        "Autor": "Freida McFadden",
+        "Duração": "1h 50m",
+        "Genero": "Mistério"
+    },
+    "Verity":{
+        "Sinopse":"'Distintamente sinistro, com um verdadeiro toque de Colleen Hoover. Por anos esperei, um thriller como esse. \n \n"
+        "— Tarryn Fisher, coautora da série Nunca Jamais \n \n"
+        "Instigante e surpreendente. Impossível largar. \n \n"
+        "— Claire Contreras, autora de Kaleidoscope Hearts \n \n"
+        "Vasculho várias caixas e encontro manuscritos em diversos estágios do processo de escrita. Todos são versões dos seis livros da série que ela já escreveu. Não há nada que indique o que estava planejando escrever em seguida. \n \n"
+        "Estou na sexta caixa, esquadrinhando todo o seu conteúdo, até que encontro algo com um título diferente. Chama-se Que assim seja. \n \n"
+        "Folheio as primeiras páginas torcendo para ser um rascunho do sétimo livro da série. Mas quase imediatamente vejo que não é. É algo mais... pessoal. Volto à primeira página do primeiro capítulo e começo a ler. \n \n"
+        "Às vezes penso na noite em que conheci Jeremy e me pergunto: se não tivéssemos cruzado nossos olhares, minha vida teria terminado do mesmo jeito?' \n \n"
+        "* Obs: Sinopse feita pela editora 'Galera Record'",
+        "Autor": "Colleen Hoover",
+        "Duração": "1h 50m",
+        "Genero": "Mistério"
+    },
+    "Assistente do vilão":{
+        "Sinopse":"'PROCURA-SE ASSISTENTE: \n \n"
+        "Vilão notório do alto escalão busca assistente leal e equilibrado para funções de escritório não especificadas, apoio à equipe para caos e terror aleatórios e outras Coisas Sombrias em Geral. Discrição é essencial. Excelentes benefícios. \n \n"
+        "Referir-se ao chefe apenas como uma 'pessoa' parecia insuficiente. Em muitos aspectos, ele era extraordinário, mas ser responsável por todas as suas vontades e necessidades acabara por torná-lo mais humano aos olhos dela. O véu misterioso que o cobria quando Evie começara o trabalho tinha desaparecido, e uma imagem bem mais clara estava formada em sua mente. \n \n"
+        "Mesmo assim, ela ainda tinha muito a aprender. \n \n"
+        "Como, por exemplo, que tipo de escuridão espreitava dentro dele para que houvesse três cabeças penduradas naquele bendito teto. \n \n"
+        "SOS!' \n \n"
+        "* Obs: Sinopse feita pela editora 'Globo'",
+        "Autor": "Hannah Nicole Maehrer",
+        "Duração": "2h 30m",
+        "Genero": "Fantasia, Mistério"
+    }
+}
+
+listaUsuarios = [] #Vai armazenar a lista de usuários depois. Essa lista está na função cadastrar_usuario()
+
+# Parte usuário funções
+# Funcão para cadastrar usuário, armazenar variáveis em dicionário e criar um arquivo .txt
+def cadastrar_usuario():
+    with open('cadastroUsuarios.txt', 'a') as cadastroUsu: #Vai criar o documento cadastroUsuarios.txt
+        while True:
+            print("\n")
+            print("====Cadastrar usuário====")
+            nome = input("Digite seu nome (Ou digite [s] para sair): ")
+
+            if nome.lower()=='s':
+                break
+            email = input("Digite seu email: ")
+            idade = int(input("Digite sua idade: "))
+            senha = input("Digite seu senha: ")
+
+
+            if idade<18:
+                print("Acesso negado - Menor de idade")
+
+            if idade >=18:
+                novoUsuario = {
+                "nome": nome,
+                "email": email,
+                "idade": idade,
+                "senha": senha,
+                "curtidas": []
+            }
+            cadastroUsu.write(f'{nome}\t{email}\t{idade}\t{senha}\n')
+            
+            with open('cadastroUsuarios.txt') as cadastroUsu:
+                for linha in cadastroUsu:
+                    # Foi necessário criar essa condição pois estava com erro de valores que não estavam conseguindo ser verificados por causa das caracteres
+                    if not linha.strip():
+                        continue
+                    dividido = linha.strip().split('\t')
+                    if len(dividido) != 4: #Se a quantidade de itens for diferente de 4, vai pular a linha
+                        continue
+                    nome, email, idade, senha = dividido
+            
+                listaUsuarios.append(novoUsuario)
+                print("Cadastro realizado com sucesso!")
+                print("\n")
+                print("Acesso permitido")
+                print("Faça login agora")
+
+
+def login_usuario(emailRecebido, senhaRecebido):
+    with open('cadastroUsuarios.txt') as cadastro:
+            
+                for linha in cadastro: # É o mesmo loop da função cadastrar_usuario()
+                    if not linha.strip():
+                        continue
+                    dividido = linha.strip().split('\t')
+                    if len(dividido) != 4:
+                        continue
+                    nomeSalvo, emailSalvo, idadeSalvo, senhaSalvo = dividido
+
+                    if emailSalvo==emailRecebido and senhaSalvo==senhaRecebido:
+                    
+                        # É necessário pegar o dicionário novamente para ter depois conseguir ter informações de curtidas
+                        usuarioLogin = {
+                            "nome": nomeSalvo,
+                            "email": emailSalvo,
+                            "idade": idadeSalvo,
+                            "senha": senhaSalvo,
+                            "curtidas": []
+                        }
+
+                        print(f'-- Seja bem-vindo {nomeSalvo}!')
+                        return usuarioLogin
+
+    return None
+
+
+
 #Menu
 def menu_principal():
     while True:
         print("\n \n Navegação: Login >> Menu")
         #Colocar os mais curtidos(lembrar de fazer depois)
         print("==== MENU ====")
-        print("Buscar vídeo [aperte m]")
+        print("1 - Buscar vídeo")
+        print("2 - Visualizar os mais curtidos")
+        print("3 - Visualizar todo o catalógo de vídeos")
         print("Sair [aperte s]")
         print("\n")
         acaoUsuario = input("O que você deseja fazer? ")
 
         #Buscar vídeo
-        if acaoUsuario == 'm':
-            busca = str(input("Digite sua busca: ")).strip()
+        if acaoUsuario == '1':
+            busca = str(input("Digite sua busca: ")).strip() 
             if busca in livros:
                 print("Encontrado!")
                 busca_livro(busca)
             else:
                 print("Não encontrado!")
+        elif acaoUsuario == '2':
+            print("A funcionalidade de 'Visualizar os mais curtidos' ainda não está pronto. Tente outra ação")
+        elif acaoUsuario == '3':
+            print("Navegação: Login >> Menu >> Visualizar todo o catalógo de vídeos")
+            print("===VISUALIZAR TODO O CATALÓGO DE VÍDEOS===")
+            print(livros, end=" ")
         elif acaoUsuario == 's':
             break
-
 
 # Resultado depois da busca
 def busca_livro(video_buscado):
@@ -45,6 +224,14 @@ def busca_livro(video_buscado):
         # Para info do livro
         if acaoUsuarioBusca == '1':
             info_livro(video_buscado)
+
+        elif acaoUsuarioBusca == '2':
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado:  # garante que não é None
+                curtir_livro(usuario_logado, video_buscado)
+
+        elif acaoUsuarioBusca == '3':
+            descurtir_livro(usuario_logado, video_buscado)
         
         # Para adcionar aos favoritos
         elif acaoUsuarioBusca == '4':
@@ -63,42 +250,109 @@ def info_livro(nome_video):
         print("\n")
         acaoUsuarioInfo = input("O que você deseja fazer? ")
         if acaoUsuarioInfo=='c': #É necessário você tranformar isso em DOCUMENTO ou DICIONÁRIO
-            print("Visualizando Sinopse, Duração e Gênero do vídeo:\n")
+            print("Visualizando Sinopse, Autor, Duração e Gênero do vídeo:\n")
+
+            def descricao(nome_video):
+                sinopse = livros[nome_video]["Sinopse"]
+                print(f"--> Sinopse: {sinopse}")
+
+                autora = livros[nome_video]["Autor"]
+                print(f"--> Autora: {autora}")
+
+                duracao = livros[nome_video]["Duração"]
+                print(f"--> Duração: {duracao}")
+
+                genero = livros[nome_video]["Genero"]
+                print(f"--> Gênero: {genero}")
+
             if nome_video == 'Quarta Asa':
-                print("--> Sinopse: Em Quarta Asa, best-seller #1 do The New York Times, uma jovem precisa sobreviver " \
-                "ao treinamento em uma escola de elite para poderosos cavaleiros de dragões, onde a única regra é se formar... ou morrer tentando. \n \nViolet Sorrengail, uma jovem de vinte anos, " \
-                "estava destinada a entrar na Divisão dos Escribas, levando uma vida relativamente tranquila entre os livros e as aulas de História. No entanto, a general comandante das forças de Navarre - " \
-                "também conhecida como sua mãe, durona como as garras de um dragão, ordena que Violet se junte às centenas de candidatos que buscam se tornar a elite de seu país: cavaleiros de dragões. \n \n" \
-                "* Obs: Sinopse feita pela editora 'Planeta Minotauro'")
-                print("--> Duração: 2h 50m")
-                print("--> Gênero: Ficção, fantasia")
+                descricao(nome_video)
+
             elif nome_video == 'Trono de vidro':
-                print("--> Sinopse: LETAL. LEAL. LENDÁRIA. \n \n" \
-                    "Celaena Sardothien fará de tudo para conquistar a liberdade. Entretanto, o castelo de vidro esconde muitos segredos e abriga um mal do qual ela deseja escapar. Tornar-se a Campeã do Rei pode ser a chave da libertação de Celaena, mas a que custo? \n \n" \
-                    "*Obs: Sinopse feita pela editora 'Galera'")
-                print("--> Duração: 2h 30m")
-                print("--> Gênero: Ação e Aventura, Fantasia Épica")
+                descricao(nome_video)
+
             elif nome_video == 'Acotar':
-                print("--> Sinopse: UMA CAÇADORA DETERMINADA. UM FEÉRICO AMALDIÇOADO. E UM CORAÇÃO MORTAL QUE PODE SER A SALVAÇÃO DE UM REINO MÁGICO. \n \n " \
-                "* Obs: Sinopse feita pela editora 'Galera'")
-                print("--> Duração: 2h 50m")
-                print("--> Gênero: Fantasia romântica, fantasia adulta")
+                descricao(nome_video)
+                
             elif nome_video == 'Powerless':
-                print("--> Sinopse: Kai é um príncipe poderoso, treinado para matar. Paedyn é uma garota comum que sobrevive fingindo ter poderes. \n \n " \
-                "Quando os caminhos dos dois se encontram por acaso. eles não imaginam que serão oponentes em uma competição mágica brutal. Nem que se verão envolvidos em um romance proibido e perigoso tão impossível quanto inevitável. \n \n" \
-                "* Obs: Sinopse feita pela editora 'Rocco'")
-                print("--> Duração: 2h 30m")
-                print("--> Gênero: Fantasia")
+                descricao(nome_video)
+
             elif nome_video == 'Orgulho e preconceito':
-                print("--> Sinopse: Orgulho e Preconceito é um dos mais aclamados romances da escritora inglesa Jane Austen. Publicado em 1813, revela como era a sociedade da época, quando os relacionamentos se desenrolavam de maneira mais lenta e romântica, no ritmo das cartas levadas por mensageiros a cavalo. \n \n " \
-                "Nesse mundo, o sonho da Sra. Bennet era casar bem suas cinco filhas: Jane, Elizabeth, Mary, Kitty e Lydia. Entre as irmãs, destaca-se Elizabeth, a Lizzy, que se depara com um turbilhão de sentimentos diante do orgulho e preconceito que mascaram a realidade. Trata-se de um clássico que, mesmo após duzentos anos desde a sua primeira publicação, " \
-                "continua a encantar milhões de leitores ao redor do mundo. \n \n " \
-                "*Obs: Sinopse feita pela editora 'Camelot'")
-                print("--> Duração: 1h 40m")
-                print("--> Gênero: Drama, Comédia, Romance")
-        
+                descricao(nome_video)
+
+            elif nome_video == 'Harry Potter':
+                descricao(nome_video)
+
+            elif nome_video == 'O principe cruel':
+                descricao(nome_video)
+
+            elif nome_video == 'A empregada':
+                descricao(nome_video)
+
+            elif nome_video == 'Verity':
+                descricao(nome_video)
+
+            elif nome_video == 'Assistente do vilão':
+                descricao(nome_video)
+
         elif acaoUsuarioInfo == 's':
             break
+
+def curtir_livro(usuario_logado, nome_do_livro):
+    email = usuario_logado["email"]
+
+    with open('curtidaLivros.txt', 'a') as curtidasLivros:
+    # Adiciona o livro à lista de curtidas do usuário
+        if nome_do_livro not in usuario_logado["curtidas"]:
+            usuario_logado["curtidas"].append(nome_do_livro)
+            print("Livro curtido com sucesso")
+        else:
+            print("Livro já curtido")
+
+        #Para saber o total de curtidas, basta medir o tamanho da lista:
+        total = len(usuario_logado["curtidas"])
+        print(f"Você tem {total} livros curtidos.")
+
+        # Para não repetir os dados
+        existe = False
+
+        with open("curtidaLivros.txt") as curtidasLivrosVerificar:
+            for linha in curtidasLivrosVerificar:
+                emailsalvo, livrosalvo = linha.strip().split('\t')
+                if emailsalvo == email and livrosalvo == nome_do_livro:
+                    existe=True
+                    break
+
+        if not existe:
+            with open("curtidaLivros.txt","a") as curtidasLivrosVerificar:
+                curtidasLivrosVerificar.write(f'{email}\t{nome_do_livro}\n')
+
+def descurtir_livro(usuario_logado, nome_do_livro):
+    with open('curtidaLivros.txt', 'a') as descurtirLivros:
+    # Adiciona o livro à lista de curtidas do usuário
+        if nome_do_livro in usuario_logado["curtidas"]:
+            usuario_logado["curtidas"].remove(nome_do_livro)
+            print("Livro tirado com sucesso")
+        else:
+            print("Livro não pertence na sua lista")
+
+    atualizadoLista = []
+    with open('curtidaLivros.txt') as curtidas:
+        for linha in curtidas:
+            if not linha.strip(): # Se a linha não estiver vazia continua
+                continue
+
+            dividido = linha.strip().split('\t')
+            if len(dividido) != 2:
+                continue
+
+            emailsalvo, livrosalvo = dividido
+
+            if not emailsalvo == email and livrosalvo == livros:
+                atualizadoLista.append(linha)
+
+    with open("curtidaLivros.txt") as curtidasLivrosVerificar:
+        curtidasLivrosVerificar.writelines(atualizadoLista)
 
 
 # Parte adm função
@@ -106,9 +360,12 @@ def menu_principal_adm():
     while True:
         print("\n \n Navegação: Login do administrador >> Menu")
         print("==== MENU ====")
-        print("1-Cadastrar livro:")
-        print("2-Excluir livro:")
-        print("4-Sair")
+        print("---Livro---")
+        print("1- Cadastrar livro")
+        print("2- Excluir livro")
+        print("---Usuário---")
+        print("3- Consultar usuário")
+        print("5- Sair")
         print("\n")
         opcaoAdm = input("O que você deseja fazer? ")
 
@@ -119,12 +376,87 @@ def menu_principal_adm():
             print("Livro cadastrado com sucesso!")
         
         elif opcaoAdm == "2":
-            print("\--Excluir livro--")
+            print("\n--Excluir livro--")
             nome=input("Nome do livro que deseja deletar: ")
             print("livro excluido com sucesso!")
+
+        elif opcaoAdm == "3":
+            consultar_usuarios()
+
         
-        elif opcaoAdm == "4":
+        elif opcaoAdm == "5":
             break
+
+def consultar_usuarios():
+    while True: 
+        print("\n Navegação: Login do administrador >> Menu >> Consultar usuário")
+        print("--Consultar usuário--")
+        print("1- Consultar um usuário especifíco")
+        print("2- Consultar lista de todos os usuários")
+        print("3- Sair")
+        opcaoConsultarUsu = int(input("O que você deseja fazer?: "))
+
+        if opcaoConsultarUsu == 3:
+            break
+        elif opcaoConsultarUsu == 2:
+            todos_usuarios()
+        elif opcaoConsultarUsu == 1:
+            especifico_usuario()
+
+def todos_usuarios():
+    while True:
+        print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Lista de todos os usuários")
+        print("--Lista de todos os usuários--")
+        with open('cadastroUsuarios.txt') as usuarios:
+            listaTodosUsuarios = [linha.split() for linha in usuarios]
+            print(listaTodosUsuarios)
+
+        opcaoConsultarTodos= input("Você deseja sair? Digite [s] para sair ou digite [n] para permanecer")
+        if opcaoConsultarTodos.lower() == 's':
+            break
+        elif opcaoConsultarTodos.lower == 'n':
+            continue
+
+def especifico_usuario():
+    with open('cadastroUsuarios.txt') as usuarios:
+            listaTodosUsuarios = [linha.split() for linha in usuarios]
+    while True:
+        print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Procurar usuário em específico")
+        print("--Procurar usuário em específico--")
+        print("1- Pesquisar por nome do usuário")
+        print("2- Pesquisar por email do usuário")
+        print("3- Sair")
+
+        opcaoConsultarEspecifico = int(input("O que você deseja fazer: "))
+
+        if opcaoConsultarEspecifico == 1:
+            buscaNome = input("Digite sua busca: ").strip()
+            for usuario in listaTodosUsuarios:
+                nome = usuario[0]
+
+                if nome == buscaNome:
+                    print(f"O usuário: '{buscaNome}' foi encontrado na lista --> {usuario}")
+                    break
+            
+            else:
+                print("Usuário não encontrado!")
+
+        elif opcaoConsultarEspecifico == 2:
+            buscaEmail = input("Digite sua busca: ").strip()
+            for usuario in listaTodosUsuarios:
+                email = usuario[1]
+
+                if email == buscaEmail:
+                    print(f"O email: '{buscaEmail}' foi encontrado na lista --> {usuario}")
+                    break
+
+            else:
+                print("Email não encontrado!")
+
+        elif opcaoConsultarEspecifico == 3:
+            break
+
+
 
 # Informações iniciais para o usuário (Essa é a primeira coisa que o usuário visualiza)
 print("====Seja bem-vindo!====")
@@ -138,28 +470,18 @@ if possuiConta == "s" or possuiConta=="S":
     print("====Login usuário====")
     email = input("Digite seu email: ")
     senha = input("Digite sua senha: ")
+    if login_usuario(email, senha):
+        menu_principal()
+    else:
+        print("Usuário não encontrado")
     print("------------------------------------------------------------------------------")
     print("\n")
-    menu_principal()
 
 #Se o usuário não possui uma conta
 elif possuiConta == "n" or possuiConta=="N":
-    print("\n")
-    print("====Cadastrar usuário====")
-    nome = input("Digite seu nome: ")
-    email = input("Digite seu email: ")
-    idade = int(input("Digite sua idade: "))
-    senha = input("Digite seu senha: ")
+    cadastrar_usuario()
     print("------------------------------------------------------------------------------")
 
-    if idade<18:
-        print("Acesso negado - Menor de idade")
-            
-    elif idade>18:
-        print("\n")
-        print("Acesso permitido")
-        print("Cadastro realizado com sucesso!")
-        print("Faça login agora")
 
 # Parte apenas para funcionários
 elif possuiConta == "a" or possuiConta=="A":
