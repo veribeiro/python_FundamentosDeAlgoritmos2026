@@ -185,6 +185,8 @@ def menu_principal():
         print("1 - Buscar vídeo")
         print("2 - Visualizar os mais curtidos")
         print("3 - Visualizar todo o catalógo de vídeos")
+        print("4 - Visualizar meu histórico de curtidas")
+        print("5 - Gerenciar favoritos")
         print("Sair [aperte s]")
         print("\n")
         acaoUsuario = input("O que você deseja fazer? ")
@@ -202,7 +204,16 @@ def menu_principal():
         elif acaoUsuario == '3':
             print("Navegação: Login >> Menu >> Visualizar todo o catalógo de vídeos")
             print("===VISUALIZAR TODO O CATALÓGO DE VÍDEOS===")
-            print(livros, end=" ")
+            print(list(livros.keys())) # Visualizar só os nomes dos livros
+        elif acaoUsuario == '4':
+            print("------------------------------------------------------------------------------")
+            print("\n \n Navegação: Login >> Menu >> Visualizar histórico de curtidas")
+            print("=== VISUALIZAR HISTÓRICO DE CURTIDAS ===")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado:
+                visualizar_curtidos(usuario_logado)
+        elif acaoUsuario == '5':
+            gerenciar_favoritos()
         elif acaoUsuario == 's':
             break
 
@@ -231,7 +242,9 @@ def busca_livro(video_buscado):
                 curtir_livro(usuario_logado, video_buscado)
 
         elif acaoUsuarioBusca == '3':
-            descurtir_livro(usuario_logado, video_buscado)
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado: 
+                descurtir_livro('curtidaLivros.txt', f'{usuario_logado["email"]}\t{video_buscado}')
         
         # Para adcionar aos favoritos
         elif acaoUsuarioBusca == '4':
@@ -327,32 +340,64 @@ def curtir_livro(usuario_logado, nome_do_livro):
             with open("curtidaLivros.txt","a") as curtidasLivrosVerificar:
                 curtidasLivrosVerificar.write(f'{email}\t{nome_do_livro}\n')
 
-def descurtir_livro(usuario_logado, nome_do_livro):
-    with open('curtidaLivros.txt', 'a') as descurtirLivros:
-    # Adiciona o livro à lista de curtidas do usuário
-        if nome_do_livro in usuario_logado["curtidas"]:
-            usuario_logado["curtidas"].remove(nome_do_livro)
-            print("Livro tirado com sucesso")
-        else:
-            print("Livro não pertence na sua lista")
+def descurtir_livro(nome_arquivo, remover):
+    removido = False
 
-    atualizadoLista = []
+    with open(nome_arquivo) as descurtirLivros:
+        linhas = descurtirLivros.readlines()
+
+    with open(nome_arquivo, 'w') as descurtirLivros:
+        for linha in linhas:
+            # Se a linha não for o que queria ser apagao, precisa reescrever
+            if linha.strip() != remover:
+                descurtirLivros.write(linha)
+            else:
+                removido = True
+    
+    if not removido:
+        print("Esse livro não está na sua lista de curtidos")
+    elif removido:
+        print("Livro descurtido com sucesso!")
+
+def visualizar_curtidos(usuario_logado):
+    email = usuario_logado["email"]
+    contador = 1
+    ha_curtidas = False
+
     with open('curtidaLivros.txt') as curtidas:
         for linha in curtidas:
-            if not linha.strip(): # Se a linha não estiver vazia continua
+            limpaLinha = linha.strip()
+            if not limpaLinha:
                 continue
 
-            dividido = linha.strip().split('\t')
-            if len(dividido) != 2:
-                continue
+            emailsalvo, livro = limpaLinha.split('\t')
 
-            emailsalvo, livrosalvo = dividido
+            if emailsalvo==email:
+                print(f"{contador}.{livro}")
+                contador +=1
+                ha_curtidas = True
+    
+    if not ha_curtidas:
+        print("Você ainda não curtiu nenhum livro!")
 
-            if not emailsalvo == email and livrosalvo == livros:
-                atualizadoLista.append(linha)
+def gerenciar_favoritos():
+    while True:
+        print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos")
+        print("=== GERENCIAR FAVORITOS ===")
+        print("1 - Criar lista de reprodução de vídeos favoritos")
+        print("2 - Visualizar lista de reprodução já criados")
+        print("Sair [aperte s]")
+        print("\n")
+        acaoUsuarioFavoritos = input("O que você deseja fazer? ")
 
-    with open("curtidaLivros.txt") as curtidasLivrosVerificar:
-        curtidasLivrosVerificar.writelines(atualizadoLista)
+        if acaoUsuarioFavoritos == '1':
+            print("Criar lista. Ainda não funciona")
+
+        elif acaoUsuarioFavoritos == '2':
+            print("Visualizar lista. Ainda não funciona")
+
+        elif acaoUsuarioFavoritos == 's' or 'S':
+            break
 
 
 # Parte adm função
