@@ -248,7 +248,18 @@ def busca_livro(video_buscado):
         
         # Para adcionar aos favoritos
         elif acaoUsuarioBusca == '4':
-            print("Adcionar favorito")
+            print("\n \n Navegação: Login >> Menu >> Buscar vídeo >> Informações do vídeo >> Adicionar vídeo em favoritos")
+            print(f"\n==== ADICIONAR EM FAVORITOS ===")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado: 
+                adicionar_favoritos(usuario_logado["email"], video_buscado)
+
+        elif acaoUsuarioBusca == '5':
+            print("\n \n Navegação: Login >> Menu >> Buscar vídeo >> Informações do vídeo >> Excluir vídeo em favoritos")
+            print(f"\n==== EXCLUIR EM FAVORITOS ===")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado: 
+                excluir_favorito(usuario_logado["email"], video_buscado)
 
         elif acaoUsuarioBusca == 's' or acaoUsuarioBusca == 'S':
             break
@@ -386,18 +397,202 @@ def gerenciar_favoritos():
         print("=== GERENCIAR FAVORITOS ===")
         print("1 - Criar lista de reprodução de vídeos favoritos")
         print("2 - Visualizar lista de reprodução já criados")
+        print("3 - Excluir lista de reprodução de vídeos favoritos")
         print("Sair [aperte s]")
         print("\n")
         acaoUsuarioFavoritos = input("O que você deseja fazer? ")
 
         if acaoUsuarioFavoritos == '1':
-            print("Criar lista. Ainda não funciona")
+            print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos >> Criar lista de reprodução de vídeos favoritos")
+            print("=== CRIAR LISTA DE VÍDEOS FAVORITOS ===")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado:  # garante que não é None
+                criar_lista(usuario_logado["email"])
 
         elif acaoUsuarioFavoritos == '2':
-            print("Visualizar lista. Ainda não funciona")
+            print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos >> Visualizar lista de reprodução já criados")
+            print("=== VISUALIZAR LISTAS ===")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado:  # garante que não é None
+                visualizar_lista(usuario_logado["email"])
+
+        elif acaoUsuarioFavoritos == '3':
+            print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos >> Excluir lista de reprodução de vídeos favoritos")
+            print("=== EXCLUIR LISTAS ===")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado:  # garante que não é None
+                remover_lista(usuario_logado["email"])
 
         elif acaoUsuarioFavoritos == 's' or 'S':
             break
+
+#Para criar lista de favoritos que o usuário quer (apenas criar o nome da lista)
+def criar_lista(email_usuario):
+    nomeLista = input("Digite o nome da nova lista que deseja criar: ").strip()
+
+    with open('nomeLista.txt', 'a') as lista:
+        lista.write(f"{email_usuario}\t{nomeLista}\n")
+
+    print(f"Lista '{nomeLista}' criada com sucesso!")
+
+def remover_lista(email_usuario):
+    print("Remover lista")
+
+
+def visualizar_lista(email_usuario):
+    listasUsuario = []
+    with open('nomeLista.txt') as lista:
+        for linha in lista:
+            email, nomeLista = linha.strip().split('\t')
+            if email == email_usuario:
+                listasUsuario.append(nomeLista)
+
+    if not listasUsuario:
+        print("Você não tem nenhuma lista criada!")
+    
+    print("--> Listas disponíveis: ")
+    for i, lista in enumerate(listasUsuario, 1):
+        print(f"{i} - {lista}")
+
+    visualizar_detalhe_favoritos()
+
+# Assim que o usuário fizer a busca do vídeo, ele pode adicionar aos favoritos de qualquer 'pasta' que criou
+def adicionar_favoritos(email_usuario, nome_video):
+    listasUsuario = []
+    with open('nomeLista.txt') as lista:
+        for linha in lista:
+            email, nomeLista = linha.strip().split('\t')
+            if email == email_usuario:
+                listasUsuario.append(nomeLista)
+
+    if not listasUsuario:
+        print("Você não tem nenhuma lista criada!")
+    
+    print("--> Listas disponíveis: ")
+    for i, lista in enumerate(listasUsuario, 1):
+        print(f"{i} - {lista}")
+
+    opcaoUsuarioLista = int(input(f"\nDigite o número da lista que deseja adicionar o vídeo '{nome_video}': "))
+    listaEscolha = listasUsuario[opcaoUsuarioLista-1]
+
+    with open('detalheFavoritos.txt', 'a') as favoritos:
+        favoritos.write(f"{email_usuario}\t{listaEscolha}\t{nome_video}\n")
+
+    print(f"O vídeo '{nome_video}' foi adicionado a lista '{listaEscolha}' com sucesso!")
+
+def visualizar_detalhe_favoritos():
+    while True:
+        print("\n=== Obter detalhes dos favoritos ===")
+        print("1 - Obter detalhes dos favoritos que foram criados")
+        print("Sair [aperte s]")
+        opcaoUsuarioDetalheFavoritos = input("O que você deseja fazer?: ")
+        if opcaoUsuarioDetalheFavoritos == 's' or opcaoUsuarioDetalheFavoritos == "S":
+            break
+        elif opcaoUsuarioDetalheFavoritos == '1':
+            print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos >> Visualizar lista reprodução já criados >> Obter detalhes dos favoritos que foram criados")
+            print("=== VISUALIZAR DETALHES FAVORITOS SALVOS ===")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado:  # garante que não é None
+                visualizar_e_selecionarFavoritos(usuario_logado["email"])
+        else:
+            print("Ocorreu um erro, o tipo de caractere que você digitou não faz parte do que foi solicitado")
+
+def visualizar_e_selecionarFavoritos(email_usuario):
+    listasUsuario = []
+    with open('nomeLista.txt') as lista:
+        for linha in lista:
+            email, nomeLista = linha.strip().split('\t')
+            if email == email_usuario:
+                listasUsuario.append(nomeLista)
+
+    if not listasUsuario:
+        print("Você não tem nenhuma lista criada!")
+    
+    print("--> Listas disponíveis: ")
+    for i, lista in enumerate(listasUsuario, 1):
+        print(f"{i} - {lista}")
+
+    opcaoUsuarioLista = int(input("\nSelecione a lista que deseja visualizar: "))
+    
+    if opcaoUsuarioLista >= 1: #Precisa ser maior ou igual a 1 que o usuário digitou
+        if opcaoUsuarioLista <= len(listasUsuario): #Verifica se o número não é grande demais
+
+            indice = opcaoUsuarioLista-1
+            listaEscolha = listasUsuario[indice]
+            print(f"Você escolheu a lista: {listaEscolha}")
+
+            encontrarItens = False
+            
+            try: # o try é usado em chances que podem dar erro e o programa fechar sozinho, mas se der for usado irá aparecer uma mensagem no except e não fecha o programa. É como se fosse um if
+                with open('detalheFavoritos.txt') as favoritos:
+                    for linha in favoritos:
+                        parte_favoritos = linha.strip().split('\t')
+
+                        if len(parte_favoritos) == 3:
+                            email_pasta_fav, lista_pasta_fav, item_pasta_fav = parte_favoritos
+
+                            if email_pasta_fav == email_usuario and lista_pasta_fav == listaEscolha:
+                                print(item_pasta_fav)
+                                encontrarItens = True
+
+                if not encontrarItens:
+                    print("Lista vazia")
+            except FileNotFoundError:
+                print("Você ainda não adicionou nenhum item na lista de favoritos")
+        else:
+            print("Número alto demais")
+    else:
+        print("Número baixo demais")
+
+def excluir_favorito(email_usuario, video_selecionado):
+    listaEncontrar = []
+
+    try:
+        with open('detalheFavoritos.txt') as favoritos:
+            for linha in favoritos:
+                partes = linha.strip().split('\t')
+                if len(partes) == 3:
+                    email, lista, video = partes
+
+                    if email == email_usuario and video == video_selecionado:
+                        listaEncontrar.append(lista)
+    except FileNotFoundError:
+        print("Não encontrado")
+        return
+
+    if not listaEncontrar:
+        print(f"{video_selecionado} não foi encontrado")
+        return
+    
+    print(f"O vídeo {video_selecionado} foi encontrado nas listas: ")
+    for i, lista in enumerate(listaEncontrar, 1):
+        print(f"{i} - {lista}")
+
+    opcaoExcluir = int(input("Digite o número da lista que deseja excluir: "))
+    listaEscolha = listaEncontrar[opcaoExcluir-1]
+
+    #Agora vai reescrever o arquivo, mas sem a linha que precisa exluir
+    manter = []
+    excluir = False
+
+    with open('detalheFavoritos.txt') as excluirFavoritos:
+        linhas = excluirFavoritos.readlines()
+
+    for linha in linhas:
+        partes = linha.strip().split('\t')
+        if len(partes) == 3:
+            #Exclui as 3 linhas que baterem exatamente
+            email, lista, video = partes
+            if email == email_usuario and lista == listaEscolha and video == video_selecionado:
+                excluir = True
+                continue
+
+            manter.append(linha)
+    if excluir:
+        with open('detalheFavoritos.txt', 'w') as escrita:
+            escrita.writelines(manter)
+        print(f"\n{video_selecionado} foi removido da lista: {listaEscolha}")
+
 
 
 # Parte adm função
@@ -410,6 +605,7 @@ def menu_principal_adm():
         print("2- Excluir livro")
         print("---Usuário---")
         print("3- Consultar usuário")
+        print("4- Consultar estatísticas")
         print("5- Sair")
         print("\n")
         opcaoAdm = input("O que você deseja fazer? ")
@@ -427,6 +623,9 @@ def menu_principal_adm():
 
         elif opcaoAdm == "3":
             consultar_usuarios()
+
+        elif opcaoAdm == "4":
+            consulta_estatistica()
 
         
         elif opcaoAdm == "5":
@@ -456,7 +655,7 @@ def todos_usuarios():
             listaTodosUsuarios = [linha.split() for linha in usuarios]
             print(listaTodosUsuarios)
 
-        opcaoConsultarTodos= input("Você deseja sair? Digite [s] para sair ou digite [n] para permanecer")
+        opcaoConsultarTodos= input("Você deseja sair? Digite [s] para sair ou digite [n] para permanecer: ")
         if opcaoConsultarTodos.lower() == 's':
             break
         elif opcaoConsultarTodos.lower == 'n':
@@ -501,7 +700,73 @@ def especifico_usuario():
         elif opcaoConsultarEspecifico == 3:
             break
 
+def consulta_estatistica():
+    # Estatísticas do sistema
+    livros_curtidos = []
+    usuarios = []
+    curtidas = []
 
+    while True:
+        print("\n--Estatísticas--")
+        print("1-Total de usuários")
+        print("2-Total de livros")
+        print("3-Curtidas de um livro específico")
+        print("4-Livros populares")
+        print("5-Informações dos livros")
+        print("6-Top 5 livros mais curtidos")
+        print("7-Sair")
+    
+        opcao=input("Escolha a sua opção administrador:")
+    
+    # Código para mostrar total de usuários
+        if opcao == "1":
+            print("\n Visualizar total de usuários:")
+            print(f"Total de usuários: {len(usuarios)}")
+            pass
+        
+        elif opcao == "2":
+        # Código para mostrar total de livros
+            print("\n Visualizar total de livros:")
+            print(f"Total de livros: {len(livros)}")
+            pass
+        
+        elif opcao == "3":
+            print("\n Visualizar curtidas de um livro específico:")
+            livro_especifico = input("Digite o nome do livro para ver as curtidas:")
+        # Código para mostrar curtidas de um livro específico
+            if livro_especifico in livros_curtidos:
+                print(f"{livro_especifico}: {livros_curtidos[livro_especifico]} curtidas")
+            else:
+                print("Livro não encontrado.")
+            pass
+        
+        elif opcao == "4":
+            print("\n Visualizar livros populares:")
+            livros_populares = []
+            for livro, curtida in livros_curtidos:
+                if curtida > 7:
+                    livros_populares.append(livro)
+            print("Livros populares:", ", ".join(livros_populares))
+        # Código para mostrar livros populares
+            pass
+        
+        elif opcao == "5":
+            print("\n Visualizar informações dos livros:")
+            for nome, info in livros.items():
+                print(f"{nome}: {info}")
+                pass
+        # Código para mostrar informações dos livros
+        elif opcao == "6":
+            print("\n Visualizar top 5 livros mais curtidos:")
+            livros_curtidos = sorted(curtidas.items(), key=lambda x: x[1], reverse=True)
+            for livro, curtida in livros_curtidos[:5]:
+                print(f"{livro}: {curtida} curtidas")
+        # Código para mostrar top 5 livros mais curtidos
+                pass
+        
+        elif opcao == "7":
+            print("Saindo do sistema de estatísticas...")
+            break
 
 # Informações iniciais para o usuário (Essa é a primeira coisa que o usuário visualiza)
 print("====Seja bem-vindo!====")
