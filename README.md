@@ -36,4 +36,8 @@ Conteúdos:
 Aula 09 -> Exercícios de 1 a 6
 Conteúdos:
 - Listas (concatenação, repetição, função map(), função filter() e compreensão de lista)
+<br>
 
+Aula 10 -> Exercícios de 1 a 7
+Conteúdos:
+- Listas aninhadas e matrizes
