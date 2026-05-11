@@ -1,105 +1,27 @@
-
-#Dicionário de livros
-
-livros = {
-    "Quarta Asa": {
-        "Sinopse": "Em Quarta Asa, best-seller #1 do The New York Times,  uma jovem precisa sobreviver ao treinamento em uma escola de elite para poderosos cavaleiros de dragões, onde a única regra é se formar... ou morrer tentando.  \n \n"
-        "Violet Sorrengail, uma jovem de vinte anos, estava destinada a entrar na Divisão dos Escribas, levando uma vida relativamente tranquila entre os livros e as aulas de História. No entanto, a general comandante das forças de Navarre - também conhecida como sua mãe, durona como as garras de um dragão, ordena que Violet se junte às centenas de candidatos que buscam se tornar a elite de seu país: cavaleiros de dragões. \n \n"
-        "* Obs: Sinopse feita pela editora 'Planeta Minotauro'",
-        "Autor": "Rebecca Yarros",
-        "Duração": "2h 50m",
-        "Genero": "Ficção, fantasia"
-    },
-    "Trono de Vidro":{
-        "Sinopse": "'LETAL. LEAL. LENDÁRIA. \n\n"
-        "Celaena Sardothien fará de tudo para conquistar a liberdade. Entretanto, o castelo de vidro esconde muitos segredos e abriga um mal do qual ela deseja escapar. Tornar-se a Campeã do Rei pode ser a chave da libertação de Celaena, mas a que custo?' \n \n"
-        "* Obs: Sinopse feita pela editora 'Galera'",
-        "Autor": "Sarah J. Maas",
-        "Duração": "2h 30m",
-        "Genero": "Ação e Aventura, Fantasia Épica"
-    },
-    "Acotar":{
-        "Sinopse":"'UMA CAÇADORA DETERMINADA. UM FEÉRICO AMALDIÇOADO. E UM CORAÇÃO MORTAL QUE PODE SER A SALVAÇÃO DE UM REINO MÁGICO.' \n \n"
-        "* Obs: Sinopse feita pela editora 'Galera'",
-        "Autor": "Sarah J. Maas",
-        "Duração": "2h 50m",
-        "Genero": "Fantasia romântica, fantasia adulta"
-    },
-    "Powerless":{
-        "Sinopse":"'Kai é um príncipe poderoso, treinado para matar. Paedyn é uma garota comum que sobrevive fingindo ter poderes. \n \n"
-        "Quando os caminhos dos dois se encontram por acaso. eles não imaginam que serão oponentes em uma competição mágica brutal. Nem que se verão envolvidos em um romance proibido e perigoso tão impossível quanto inevitável.' \n \n"
-        "* Obs: Sinopse feita pela editora 'Rocco'",
-        "Autor": "Lauren Roberts",
-        "Duração": "2h 30m",
-        "Genero": "Fantasia"
-    },
-    "Orgulho e preconceito":{
-        "Sinopse":"'Orgulho e Preconceito é um dos mais aclamados romances da escritora inglesa Jane Austen. Publicado em 1813, revela como era a sociedade da época, quando os relacionamentos se desenrolavam de maneira mais lenta e romântica, no ritmo das cartas levadas por mensageiros a cavalo. \n \n"
-        "Nesse mundo, o sonho da Sra. Bennet era casar bem suas cinco filhas: Jane, Elizabeth, Mary, Kitty e Lydia. Entre as irmãs, destaca-se Elizabeth, a Lizzy, que se depara com um turbilhão de sentimentos diante do orgulho e preconceito que mascaram a realidade. Trata-se de um clássico que, mesmo após duzentos anos desde a sua primeira publicação,continua a encantar milhões de leitores ao redor do mundo.' \n \n"
-        "* Obs: Sinopse feita pela editora 'Camelot'",
-        "Autor": "Jane Austen",
-        "Duração": "1h 40m",
-        "Genero": "Drama, Comédia, Romance"
-    },
-    "Harry Potter":{
-        "Sinopse":"'HARRY POTTER nunca tinha ouvido falar em Hogwarts até o momento em que as CARTAS começam a aparecer no capacho do número 4 da rua dos Alfeneiros. \n \n"
-        "Endereçadas com TINTA VERDE em pergaminho amarelado com um LACRE PÚRPURA, elas são rapidamente confiscadas por seus tios TERRÍVEIS. E então, no décimo primeiro aniversário de Harry, um homem GIGANTESCO com olhos luzindo como besouros negros chamado RÚBEO HAGRID entra intempestivamente com uma notícia ASSOMBROSA: \n \n"
-        "Harry Potter é um bruxo e tem uma vaga na ESCOLA DE MAGIA E BRUXARIA DE HOGWARTS. \n \n"
-        "Uma aventura inacreditável está para começar!' \n \n"
-        "* Obs: Sinopse feita pela editora 'ROCCO'",
-        "Autor": "J.K. Rowling",
-        "Duração": "2h 00m",
-        "Genero": "Fantasia, Ficção"
-    },
-    "O principe cruel":{
-        "Sinopse":"'Da autora de best-sellers nº 1 do The New York Times , Holly Black, O prínicipe cruel  é o primeiro livro da envolvente série O Povo do Ar sobre uma garota mortal que se vê presa em uma teia de intrigas de fadas reais. \n \n"
-        "Jude tinha apenas sete anos quando seus pais foram brutalmente assasinados e ela e as irmãs levadas para viver no traiçoeiro Reino das Fadas. Dez anos depois, tudo o que Jude quer é se encaixar, mesmo sendo uma garota mortal. Mas todos os feéricos parecem desprezar os humanos... Especialmente o príncipe Cardan, o mais jovem e mais perverso dos filhos do Grande Rei de Elfhame. \n \n"
-        "Para conquistar o tão desejado lugar na Corte, Jude precisa desafiar o príncipe - e enfrentar as consequências do ato.' \n \n"
-        "* Obs: Sinopse feita pela editora 'Galera'",
-        "Autor": "Holly Black",
-        "Duração": "1h 30m",
-        "Genero": "Fantasia"
-    },
-    "A empregada":{
-        "Sinopse":"'147 SEMANAS NA LISTA DE MAIS VENDIDOS DO THE NEW YORK TIMES \n \n"
-        "Uma história que vai surpreender até os leitores de suspense mais calejados. \n \n"
-        "Todos os dias, Millie limpa a casa de Nina e Andrew Winchester de cima a baixo. Pega a filha deles na escola. Prepara refeições deliciosas para a família toda antes de poder se recolher e enfim comer o próprio jantar, sozinha em seu quarto minúsculo e claustrofóbico no sótão. \n \n"
-        "Afinal, com seu passado problemático, ela tem mais é que agradecer por ter conseguido esse emprego. \n \n"
-        "Logo os Winchesters vão descobrir que não fazem a menor ideia de quem Millie é de verdade. Nem do que ela é capaz de fazer.' \n \n"
-        "* Obs: Sinopse feita pela editora 'Arqueiro'",
-        "Autor": "Freida McFadden",
-        "Duração": "1h 50m",
-        "Genero": "Mistério"
-    },
-    "Verity":{
-        "Sinopse":"'Distintamente sinistro, com um verdadeiro toque de Colleen Hoover. Por anos esperei, um thriller como esse. \n \n"
-        "— Tarryn Fisher, coautora da série Nunca Jamais \n \n"
-        "Instigante e surpreendente. Impossível largar. \n \n"
-        "— Claire Contreras, autora de Kaleidoscope Hearts \n \n"
-        "Vasculho várias caixas e encontro manuscritos em diversos estágios do processo de escrita. Todos são versões dos seis livros da série que ela já escreveu. Não há nada que indique o que estava planejando escrever em seguida. \n \n"
-        "Estou na sexta caixa, esquadrinhando todo o seu conteúdo, até que encontro algo com um título diferente. Chama-se Que assim seja. \n \n"
-        "Folheio as primeiras páginas torcendo para ser um rascunho do sétimo livro da série. Mas quase imediatamente vejo que não é. É algo mais... pessoal. Volto à primeira página do primeiro capítulo e começo a ler. \n \n"
-        "Às vezes penso na noite em que conheci Jeremy e me pergunto: se não tivéssemos cruzado nossos olhares, minha vida teria terminado do mesmo jeito?' \n \n"
-        "* Obs: Sinopse feita pela editora 'Galera Record'",
-        "Autor": "Colleen Hoover",
-        "Duração": "1h 50m",
-        "Genero": "Mistério"
-    },
-    "Assistente do vilão":{
-        "Sinopse":"'PROCURA-SE ASSISTENTE: \n \n"
-        "Vilão notório do alto escalão busca assistente leal e equilibrado para funções de escritório não especificadas, apoio à equipe para caos e terror aleatórios e outras Coisas Sombrias em Geral. Discrição é essencial. Excelentes benefícios. \n \n"
-        "Referir-se ao chefe apenas como uma 'pessoa' parecia insuficiente. Em muitos aspectos, ele era extraordinário, mas ser responsável por todas as suas vontades e necessidades acabara por torná-lo mais humano aos olhos dela. O véu misterioso que o cobria quando Evie começara o trabalho tinha desaparecido, e uma imagem bem mais clara estava formada em sua mente. \n \n"
-        "Mesmo assim, ela ainda tinha muito a aprender. \n \n"
-        "Como, por exemplo, que tipo de escuridão espreitava dentro dele para que houvesse três cabeças penduradas naquele bendito teto. \n \n"
-        "SOS!' \n \n"
-        "* Obs: Sinopse feita pela editora 'Globo'",
-        "Autor": "Hannah Nicole Maehrer",
-        "Duração": "2h 30m",
-        "Genero": "Fantasia, Mistério"
-    }
-}
-
 listaUsuarios = [] #Vai armazenar a lista de usuários depois. Essa lista está na função cadastrar_usuario()
+import os
+
+def inicializar_catalogo():
+    # Verifica se o arquivo não existe ou está vazio
+    if not os.path.exists('videos.txt') or os.path.getsize('videos.txt') == 0:
+        videos_iniciais = [
+            "QUARTA ASA\tEm Quarta Asa, best-seller #1 do The New York Times,  uma jovem precisa sobreviver ao treinamento\\nem uma escola de elite para poderosos cavaleiros de dragões, onde a única regra é se formar... ou morrer tentando.\\nViolet Sorrengail, uma jovem de vinte anos, estava destinada a entrar na Divisão dos Escribas,\\nlevando uma vida relativamente tranquila entre os livros e as aulas de História. No entanto, a general comandante das forças de Navarre -\\ntambém conhecida como sua mãe, durona como as garras de um dragão, ordena que Violet\\nse junte às centenas de candidatos que buscam se tornar a elite de seu país: cavaleiros de dragões.\\n* Obs: Sinopse feita pela editora 'Planeta Minotauro'\t2h 50m\tFicção, fantasia\tRebecca Yarros\n",
+            "TRONO DE VIDRO\t'LETAL. LEAL. LENDÁRIA.\\nCelaena Sardothien fará de tudo para conquistar a liberdade.\\nEntretanto, o castelo de vidro esconde muitos segredos e abriga um mal do qual ela deseja escapar.\\nTornar-se a Campeã do Rei pode ser a chave da libertação de Celaena, mas a que custo?'\\n* Obs: Sinopse feita pela editora 'Galera'\t2h 30m\tAção e Aventura, Fantasia Épica\tSarah J. Maas\n"
+            "ACOTAR\t'UMA CAÇADORA DETERMINADA. UM FEÉRICO AMALDIÇOADO. E UM CORAÇÃO MORTAL QUE PODE SER A SALVAÇÃO DE UM REINO MÁGICO.'\\n* Obs: Sinopse feita pela editora 'Galera'\t2h 50m\tFantasia romântica, fantasia adulta\tSarah J. Maas\n"
+            "POWERLESS\t'Kai é um príncipe poderoso, treinado para matar. Paedyn é uma garota comum que sobrevive fingindo ter poderes.\\nQuando os caminhos dos dois se encontram por acaso. eles não imaginam que serão oponentes em uma competição mágica brutal.\\nNem que se verão envolvidos em um romance proibido e perigoso tão impossível quanto inevitável.'\\n* Obs: Sinopse feita pela editora 'Rocco'\t2h 30m\tFantasia\tLauren Roberts\n"
+            "ORGULHO E PRECONCEITO\t'Orgulho e Preconceito é um dos mais aclamados romances da escritora inglesa Jane Austen.\\nPublicado em 1813, revela como era a sociedade da época,\\nquando os relacionamentos se desenrolavam de maneira mais lenta e romântica,\\nno ritmo das cartas levadas por mensageiros a cavalo.\\nNesse mundo, o sonho da Sra. Bennet era casar bem suas cinco filhas: Jane, Elizabeth, Mary, Kitty e Lydia.\\nEntre as irmãs, destaca-se Elizabeth, a Lizzy, que se depara com um turbilhão de sentimentos\\ndiante do orgulho e preconceito que mascaram a realidade.\\nTrata-se de um clássico que, mesmo após duzentos anos desde a sua primeira publicação,\\ncontinua a encantar milhões de leitores ao redor do mundo.'\\n* Obs: Sinopse feita pela editora 'Camelot'\t1h 40m\tDrama, Comédia, Romance\tJane Austen\n"
+            "HARRY POTTER\t'HARRY POTTER nunca tinha ouvido falar em Hogwarts até o momento em que as CARTAS começam a aparecer\\n no capacho do número 4 da rua dos Alfeneiros.\\nEndereçadas com TINTA VERDE em pergaminho amarelado com um LACRE PÚRPURA, elas são rapidamente confiscadas por seus tios TERRÍVEIS.\\nE então, no décimo primeiro aniversário de Harry, um homem GIGANTESCO com olhos luzindo\\ncomo besouros negros chamado RÚBEO HAGRID entra intempestivamente com uma notícia ASSOMBROSA:\\nHarry Potter é um bruxo e tem uma vaga na ESCOLA DE MAGIA E BRUXARIA DE HOGWARTS.\\nUma aventura inacreditável está para começar!'\\n* Obs: Sinopse feita pela editora 'ROCCO'\t2h 00m\tFantasia, Ficção\tJ.K. Rowling\n"
+            "O PRINCIPE CRUEL\t'Da autora de best-sellers nº 1 do The New York Times , Holly Black, O prínicipe cruel\\né o primeiro livro da envolvente série O Povo do Ar sobre uma garota mortal que se vê presa\\nem uma teia de intrigas de fadas reais.\\nJude tinha apenas sete anos quando seus pais foram brutalmente assasinados\\ne ela e as irmãs levadas para viver no traiçoeiro Reino das Fadas.\\nDez anos depois, tudo o que Jude quer é se encaixar, mesmo sendo uma garota mortal.\\nMas todos os feéricos parecem desprezar os humanos... Especialmente o príncipe Cardan,\\no mais jovem e mais perverso dos filhos do Grande Rei de Elfhame.\\nPara conquistar o tão desejado lugar na Corte, Jude precisa desafiar o príncipe\\n- e enfrentar as consequências do ato.'\\n* Obs: Sinopse feita pela editora 'Galera'\t1h 30m\tFantasia\tHolly Black\n"
+            "A EMPREGADA\t'147 SEMANAS NA LISTA DE MAIS VENDIDOS DO THE NEW YORK TIMES\\nUma história que vai surpreender até os leitores de suspense mais calejados.\\nTodos os dias, Millie limpa a casa de Nina e Andrew Winchester de cima a baixo. Pega a filha deles na escola.\\nPrepara refeições deliciosas para a família toda antes de poder se recolher e enfim comer\\no próprio jantar, sozinha em seu quarto minúsculo e claustrofóbico no sótão.\\nAfinal, com seu passado problemático, ela tem mais é que agradecer por ter conseguido esse emprego.\\nLogo os Winchesters vão descobrir que não fazem a menor ideia de quem Millie é de verdade. Nem do que ela é capaz de fazer.'\\n* Obs: Sinopse feita pela editora 'Arqueiro'\t1h 50m\tMistério\tFreida McFadden\n"
+            "VERITY\t'Distintamente sinistro, com um verdadeiro toque de Colleen Hoover. Por anos esperei, um thriller como esse.\\n— Tarryn Fisher, coautora da série Nunca Jamais\\nInstigante e surpreendente. Impossível largar.\\n— Claire Contreras, autora de Kaleidoscope Hearts\\nVasculho várias caixas e encontro manuscritos em diversos estágios do processo de escrita.\\nTodos são versões dos seis livros da série que ela já escreveu.\\nNão há nada que indique o que estava planejando escrever em seguida.\\nEstou na sexta caixa, esquadrinhando todo o seu conteúdo, até que encontro algo com um título diferente. Chama-se Que assim seja.\\nFolheio as primeiras páginas torcendo para ser um rascunho do sétimo livro da série.\\nMas quase imediatamente vejo que não é. É algo mais... pessoal. Volto à primeira página do primeiro capítulo e começo a ler.\\nÀs vezes penso na noite em que conheci Jeremy e me pergunto: se não tivéssemos cruzado nossos olhares,\\nminha vida teria terminado do mesmo jeito?'\\n* Obs: Sinopse feita pela editora 'Galera Record'\t1h 50m\tMistério\tColleen Hoover\n"
+            "ASSISTENTE DO VILÃO\t'PROCURA-SE ASSISTENTE:\\nVilão notório do alto escalão busca assistente leal e equilibrado\\npara funções de escritório não especificadas, apoio à equipe para caos e terror aleatórios e outras Coisas Sombrias em Geral.\\nDiscrição é essencial. Excelentes benefícios.\\nReferir-se ao chefe apenas como uma 'pessoa' parecia insuficiente.\\nEm muitos aspectos, ele era extraordinário, mas ser responsável por todas as suas vontades\\ne necessidades acabara por torná-lo mais humano aos olhos dela.\\nO véu misterioso que o cobria quando Evie começara o trabalho tinha desaparecido, e uma imagem bem mais clara estava formada em sua mente.\\nMesmo assim, ela ainda tinha muito a aprender.\\nComo, por exemplo, que tipo de escuridão espreitava dentro dele para que houvesse três cabeças penduradas naquele bendito teto.\\nSOS!\\n* Obs: Sinopse feita pela editora 'Globo'\t2h 30m\tFantasia, Mistério\tHannah Nicole Maehrer\n"
+        ]
+        
+        with open('videos.txt', 'w', encoding='utf-8') as f:
+            f.writelines(videos_iniciais)
+        print("📥 Catálogo inicial de vídeos carregado com sucesso!")
+
+inicializar_catalogo()
 
 # Parte usuário funções
 # Funcão para cadastrar usuário, armazenar variáveis em dicionário e criar um arquivo .txt
@@ -174,8 +96,6 @@ def login_usuario(emailRecebido, senhaRecebido):
 
     return None
 
-
-
 #Menu
 def menu_principal():
     while True:
@@ -193,18 +113,16 @@ def menu_principal():
 
         #Buscar vídeo
         if acaoUsuario == '1':
-            busca = str(input("Digite sua busca: ")).strip() 
-            if busca in livros:
-                print("Encontrado!")
-                busca_livro(busca)
-            else:
-                print("Não encontrado!")
+            pesquisa()
+
         elif acaoUsuario == '2':
-            print("A funcionalidade de 'Visualizar os mais curtidos' ainda não está pronto. Tente outra ação")
+            top_cinco()
+
         elif acaoUsuario == '3':
             print("Navegação: Login >> Menu >> Visualizar todo o catalógo de vídeos")
             print("===VISUALIZAR TODO O CATALÓGO DE VÍDEOS===")
-            print(list(livros.keys())) # Visualizar só os nomes dos livros
+            mostrar_catalogo()
+
         elif acaoUsuario == '4':
             print("------------------------------------------------------------------------------")
             print("\n \n Navegação: Login >> Menu >> Visualizar histórico de curtidas")
@@ -216,6 +134,64 @@ def menu_principal():
             gerenciar_favoritos()
         elif acaoUsuario == 's':
             break
+
+def pesquisa():
+    livros_armazenados = []
+    try:
+        with open('videos.txt', encoding='utf-8') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes)>=1:
+                    livros_armazenados.append(partes[0].lower())
+    except FileNotFoundError:
+        print("O arquivo não foi encontrado")
+
+            #Mostrar opções
+    if livros_armazenados:
+        print("=== Todos os vídeos disponíveis ===")
+        for i, nome in enumerate(livros_armazenados, 1):
+            print(f"{i} - {nome}")
+        print("-----------------------------------------")
+
+            #Pedir para o usuário buscar vídeo
+        busca = input("\nDigite o nome ou o número do vídeo acima: ").strip().lower()
+            #Verificar se o usuário digitou o nome ou número
+        videoEncontrado = None
+
+            #Se digitou o número
+        if busca.isdigit(): #is digit() é uma função de string usada para verificar se todos os caracteres em uma string são dígitos numéricos (0-9).
+            indice = int(busca)-1
+            if 0<=indice<len(livros_armazenados):
+                videoEncontrado = livros_armazenados[indice]
+            
+            #Verificar se o texto existe
+        if not videoEncontrado:
+            for livro in livros_armazenados:
+                if busca == livro.lower():
+                    videoEncontrado = livro
+                    break
+        if videoEncontrado:
+            print("Encontrado!")
+            busca_livro(videoEncontrado)
+        else:
+            print("Não encontrado!")
+    else:
+        print("Não há vídeos cadastrados")
+
+def mostrar_catalogo():
+    try:
+        with open('videos.txt', encoding='utf-8') as lista:
+            for i, linha in enumerate(lista, 1):
+                #Contador para numerar os títulos
+                partes = linha.strip().split('\t')
+
+                if len(partes)>=1:
+                    titulo = partes[0]
+                    print(f"{i} - {titulo}")
+            if i==0:
+                print("Catalógo vazio")
+    except FileNotFoundError:
+        print("Arquivo não encontrado")
 
 # Resultado depois da busca
 def busca_livro(video_buscado):
@@ -273,53 +249,31 @@ def info_livro(nome_video):
         print("Sair [digite s]")
         print("\n")
         acaoUsuarioInfo = input("O que você deseja fazer? ")
-        if acaoUsuarioInfo=='c': #É necessário você tranformar isso em DOCUMENTO ou DICIONÁRIO
+        if acaoUsuarioInfo=='c' or acaoUsuarioInfo=="C": #É necessário você tranformar isso em DOCUMENTO ou DICIONÁRIO
             print("Visualizando Sinopse, Autor, Duração e Gênero do vídeo:\n")
+            try:
+                with open('videos.txt', encoding='utf-8') as lista:
+                    for linha in lista:
+                        partes = linha.strip().split('\t')
 
-            def descricao(nome_video):
-                sinopse = livros[nome_video]["Sinopse"]
-                print(f"--> Sinopse: {sinopse}")
+                        if len(partes)==5:
+                            titulo, sinopse, duracao, genero, autor = partes
 
-                autora = livros[nome_video]["Autor"]
-                print(f"--> Autora: {autora}")
+                            if titulo.lower() == nome_video:
+                                formatarSinopse = sinopse.replace("\\n", "\n")
+                                print("\n"+"="*10)
+                                print(f"TÍTULO: {titulo.upper()}")
+                                print("-"*10)
+                                print(f"SINOPSE: {formatarSinopse}")
+                                print(f"DURAÇÃO: {duracao}")
+                                print(f"GÊNERO: {genero}")
+                                print(f"AUTOR: {autor}")
+                                print("="*10)
+                                break
+            except FileNotFoundError:
+                print("O arquivo não existe")
 
-                duracao = livros[nome_video]["Duração"]
-                print(f"--> Duração: {duracao}")
-
-                genero = livros[nome_video]["Genero"]
-                print(f"--> Gênero: {genero}")
-
-            if nome_video == 'Quarta Asa':
-                descricao(nome_video)
-
-            elif nome_video == 'Trono de vidro':
-                descricao(nome_video)
-
-            elif nome_video == 'Acotar':
-                descricao(nome_video)
-                
-            elif nome_video == 'Powerless':
-                descricao(nome_video)
-
-            elif nome_video == 'Orgulho e preconceito':
-                descricao(nome_video)
-
-            elif nome_video == 'Harry Potter':
-                descricao(nome_video)
-
-            elif nome_video == 'O principe cruel':
-                descricao(nome_video)
-
-            elif nome_video == 'A empregada':
-                descricao(nome_video)
-
-            elif nome_video == 'Verity':
-                descricao(nome_video)
-
-            elif nome_video == 'Assistente do vilão':
-                descricao(nome_video)
-
-        elif acaoUsuarioInfo == 's':
+        elif acaoUsuarioInfo=='s' or acaoUsuarioInfo=='S':
             break
 
 def curtir_livro(usuario_logado, nome_do_livro):
@@ -354,50 +308,57 @@ def curtir_livro(usuario_logado, nome_do_livro):
 def descurtir_livro(nome_arquivo, remover):
     removido = False
 
-    with open(nome_arquivo) as descurtirLivros:
-        linhas = descurtirLivros.readlines()
+    try:
+        with open(nome_arquivo) as descurtirLivros:
+            linhas = descurtirLivros.readlines()
 
-    with open(nome_arquivo, 'w') as descurtirLivros:
-        for linha in linhas:
-            # Se a linha não for o que queria ser apagao, precisa reescrever
-            if linha.strip() != remover:
-                descurtirLivros.write(linha)
-            else:
-                removido = True
+        with open(nome_arquivo, 'w') as descurtirLivros:
+            for linha in linhas:
+                # Se a linha não for o que queria ser apagao, precisa reescrever
+                if linha.strip() != remover:
+                    descurtirLivros.write(linha)
+                else:
+                    removido = True
     
-    if not removido:
-        print("Esse livro não está na sua lista de curtidos")
-    elif removido:
-        print("Livro descurtido com sucesso!")
+        if not removido:
+            print("Esse livro não está na sua lista de curtidos")
+        elif removido:
+            print("Livro descurtido com sucesso!")
+    except FileNotFoundError:
+        print("Não há arquivo (você ainda não curtiu nenhum vídeo)")
 
 def visualizar_curtidos(usuario_logado):
     email = usuario_logado["email"]
     contador = 1
     ha_curtidas = False
 
-    with open('curtidaLivros.txt') as curtidas:
-        for linha in curtidas:
-            limpaLinha = linha.strip()
-            if not limpaLinha:
-                continue
+    try:
+        with open('curtidaLivros.txt') as curtidas:
+            for linha in curtidas:
+                limpaLinha = linha.strip()
+                if not limpaLinha:
+                    continue
 
-            emailsalvo, livro = limpaLinha.split('\t')
+                emailsalvo, livro = limpaLinha.split('\t')
 
-            if emailsalvo==email:
-                print(f"{contador}.{livro}")
-                contador +=1
-                ha_curtidas = True
+                if emailsalvo==email:
+                    print(f"{contador}.{livro}")
+                    contador +=1
+                    ha_curtidas = True
     
-    if not ha_curtidas:
-        print("Você ainda não curtiu nenhum livro!")
+        if not ha_curtidas:
+            print("Você ainda não curtiu nenhum livro!")
+    except FileNotFoundError:
+        print("Você ainda não curtiu nenhum livro")
 
 def gerenciar_favoritos():
     while True:
         print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos")
         print("=== GERENCIAR FAVORITOS ===")
         print("1 - Criar lista de reprodução de vídeos favoritos")
-        print("2 - Visualizar lista de reprodução já criados")
-        print("3 - Excluir lista de reprodução de vídeos favoritos")
+        print("2 - Editar lista de reprodução criados")
+        print("3 - Visualizar lista de reprodução já criados")
+        print("4 - Excluir lista de reprodução de vídeos favoritos")
         print("Sair [aperte s]")
         print("\n")
         acaoUsuarioFavoritos = input("O que você deseja fazer? ")
@@ -410,13 +371,21 @@ def gerenciar_favoritos():
                 criar_lista(usuario_logado["email"])
 
         elif acaoUsuarioFavoritos == '2':
+            print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos >> Editar lista de reprodução criados")
+            print("=== EDITAR LISTA DE VÍDEOS FAVORITOS ===")
+            print("* Você só pode editar os nomes de suas listas")
+            usuario_logado = login_usuario(email, senha)
+            if usuario_logado:  # garante que não é None
+                editar_lista_nome(usuario_logado["email"])
+
+        elif acaoUsuarioFavoritos == '3':
             print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos >> Visualizar lista de reprodução já criados")
             print("=== VISUALIZAR LISTAS ===")
             usuario_logado = login_usuario(email, senha)
             if usuario_logado:  # garante que não é None
                 visualizar_lista(usuario_logado["email"])
 
-        elif acaoUsuarioFavoritos == '3':
+        elif acaoUsuarioFavoritos == '4':
             print("\n \n Navegação: Login >> Menu >> Gerenciar favoritos >> Excluir lista de reprodução de vídeos favoritos")
             print("=== EXCLUIR LISTAS ===")
             usuario_logado = login_usuario(email, senha)
@@ -435,26 +404,88 @@ def criar_lista(email_usuario):
 
     print(f"Lista '{nomeLista}' criada com sucesso!")
 
-def remover_lista(email_usuario):
-    print("Remover lista")
+def editar_lista_nome(email_usuario):
+    listas_criadas=[]
+    try:
+        with open('nomeLista.txt') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes) == 2 and partes[0] == email_usuario:
+                    listas_criadas.append(partes[1])
+    except FileNotFoundError:
+        print("Não há listas!")
+        return
+    
+    if not listas_criadas:
+        print("Lista não encontrada")
+        return
+    
+    print("---TODAS AS SUAS LISTAS---")
+    for i, nome in enumerate(listas_criadas, 1):
+        print(f"{i} - {nome}")
+
+    opcaoUsuarioEditar = int(input("\nSelecione o número da lista que deseja editar para renomear: "))
+    nomeAntigoLista = listas_criadas[opcaoUsuarioEditar-1]
+    nomeNovoLista = input(f"Digite o nome novo para a lista: '{nomeAntigoLista}': ")
+
+    # A parte abaixo vai atualizar o nomeLista.txt, o arquivo que só tem o nome da lista e o email do usuário
+    linhas_mudar = []
+    with open('nomeLista.txt') as lista:
+        for linha in lista:
+            if linha.strip() == f"{email_usuario}\t{nomeAntigoLista}":
+                linhas_mudar.append(f"{email_usuario}\t{nomeNovoLista}\n")
+            else:
+                linhas_mudar.append(linha)
+
+    with open('nomeLista.txt', 'w') as linha:
+        linha.writelines(linhas_mudar)
+
+    # A parte abaixo vai atualizar o detalheFavoritos.txt, o arquivo tem o email usuário, nome lista e nome dos vídeos adicionados
+    linhas_detalhe_arquivo = []
+    try:
+        with open('detalheFavoritos.txt') as listaf:
+            for linha in listaf:
+                partes = linha.strip().split('\t')
+                if len(partes) == 3:
+                    email, lista, video = partes
+                    if email == email_usuario and lista == nomeAntigoLista:
+                        linhas_detalhe_arquivo.append(f"{email}\t{nomeNovoLista}\t{video}\n")
+                    else:
+                        linhas_detalhe_arquivo.append(linha)
+
+        with open('detalheFavoritos.txt', 'w') as lista:
+            lista.writelines(linhas_detalhe_arquivo)
+
+    except FileNotFoundError:
+        print("Não há vídeos")
+        pass
+
+    print(f"Nome lista alterada com sucesso! A lista: '{nomeAntigoLista}' agora se chama: '{nomeNovoLista}'!")
 
 
 def visualizar_lista(email_usuario):
     listasUsuario = []
-    with open('nomeLista.txt') as lista:
-        for linha in lista:
-            email, nomeLista = linha.strip().split('\t')
-            if email == email_usuario:
-                listasUsuario.append(nomeLista)
+    try:
+        with open('nomeLista.txt') as lista:
+            for linha in lista:
+                email, nomeLista = linha.strip().split('\t')
+                if email == email_usuario:
+                    listasUsuario.append(nomeLista)
 
-    if not listasUsuario:
-        print("Você não tem nenhuma lista criada!")
+        if not listasUsuario:
+            print("Você não tem nenhuma lista criada!")
     
-    print("--> Listas disponíveis: ")
-    for i, lista in enumerate(listasUsuario, 1):
-        print(f"{i} - {lista}")
+        print("--> Listas disponíveis: ")
+        for i, lista in enumerate(listasUsuario, 1):
+            print(f"{i} - {lista}")
 
-    visualizar_detalhe_favoritos()
+        if lista:
+            visualizar_detalhe_favoritos()
+        else:
+            print("Não há lista")
+        
+    except FileNotFoundError:
+        print("Não há arquivo (você ainda não criou nenhuma lista)")
 
 # Assim que o usuário fizer a busca do vídeo, ele pode adicionar aos favoritos de qualquer 'pasta' que criou
 def adicionar_favoritos(email_usuario, nome_video):
@@ -472,13 +503,19 @@ def adicionar_favoritos(email_usuario, nome_video):
     for i, lista in enumerate(listasUsuario, 1):
         print(f"{i} - {lista}")
 
-    opcaoUsuarioLista = int(input(f"\nDigite o número da lista que deseja adicionar o vídeo '{nome_video}': "))
-    listaEscolha = listasUsuario[opcaoUsuarioLista-1]
+    try:
+        opcaoUsuarioLista = int(input(f"\nDigite o número da lista que deseja adicionar o vídeo '{nome_video}': "))
+        if opcaoUsuarioLista == lista:
+            listaEscolha = listasUsuario[opcaoUsuarioLista-1]
 
-    with open('detalheFavoritos.txt', 'a') as favoritos:
-        favoritos.write(f"{email_usuario}\t{listaEscolha}\t{nome_video}\n")
+            with open('detalheFavoritos.txt', 'a') as favoritos:
+                favoritos.write(f"{email_usuario}\t{listaEscolha}\t{nome_video}\n")
 
-    print(f"O vídeo '{nome_video}' foi adicionado a lista '{listaEscolha}' com sucesso!")
+            print(f"O vídeo '{nome_video}' foi adicionado a lista '{listaEscolha}' com sucesso!")
+        else:
+            print("Você não possui listas!")
+    except ValueError:
+        print("Você digitou algo inválido")
 
 def visualizar_detalhe_favoritos():
     while True:
@@ -512,37 +549,41 @@ def visualizar_e_selecionarFavoritos(email_usuario):
     for i, lista in enumerate(listasUsuario, 1):
         print(f"{i} - {lista}")
 
-    opcaoUsuarioLista = int(input("\nSelecione a lista que deseja visualizar: "))
+    try:
+        opcaoUsuarioLista = int(input("\nSelecione a lista que deseja visualizar: "))
     
-    if opcaoUsuarioLista >= 1: #Precisa ser maior ou igual a 1 que o usuário digitou
-        if opcaoUsuarioLista <= len(listasUsuario): #Verifica se o número não é grande demais
+        if opcaoUsuarioLista >= 1: #Precisa ser maior ou igual a 1 que o usuário digitou
+            if opcaoUsuarioLista <= len(listasUsuario): #Verifica se o número não é grande demais
 
-            indice = opcaoUsuarioLista-1
-            listaEscolha = listasUsuario[indice]
-            print(f"Você escolheu a lista: {listaEscolha}")
+                indice = opcaoUsuarioLista-1
+                listaEscolha = listasUsuario[indice]
+                print(f"Você escolheu a lista: {listaEscolha}")
 
-            encontrarItens = False
+                encontrarItens = False
             
-            try: # o try é usado em chances que podem dar erro e o programa fechar sozinho, mas se der for usado irá aparecer uma mensagem no except e não fecha o programa. É como se fosse um if
-                with open('detalheFavoritos.txt') as favoritos:
-                    for linha in favoritos:
-                        parte_favoritos = linha.strip().split('\t')
+                try: # o try é usado em chances que podem dar erro e o programa fechar sozinho, mas se der for usado irá aparecer uma mensagem no except e não fecha o programa. É como se fosse um if
+                    with open('detalheFavoritos.txt') as favoritos:
+                        for linha in favoritos:
+                            parte_favoritos = linha.strip().split('\t')
 
-                        if len(parte_favoritos) == 3:
-                            email_pasta_fav, lista_pasta_fav, item_pasta_fav = parte_favoritos
+                            if len(parte_favoritos) == 3:
+                                email_pasta_fav, lista_pasta_fav, item_pasta_fav = parte_favoritos
 
-                            if email_pasta_fav == email_usuario and lista_pasta_fav == listaEscolha:
-                                print(item_pasta_fav)
-                                encontrarItens = True
+                                if email_pasta_fav == email_usuario and lista_pasta_fav == listaEscolha:
+                                    print(item_pasta_fav)
+                                    encontrarItens = True
 
-                if not encontrarItens:
-                    print("Lista vazia")
-            except FileNotFoundError:
-                print("Você ainda não adicionou nenhum item na lista de favoritos")
+                    if not encontrarItens:
+                        print("Lista vazia")
+                except FileNotFoundError:
+                    print("Você ainda não adicionou nenhum item na lista de favoritos")
+            else:
+                print("Número alto demais")
         else:
-            print("Número alto demais")
-    else:
-        print("Número baixo demais")
+            print("Número baixo demais")
+    except ValueError:
+        print("Você digitou algo inválido!")
+
 
 def excluir_favorito(email_usuario, video_selecionado):
     listaEncontrar = []
@@ -593,7 +634,67 @@ def excluir_favorito(email_usuario, video_selecionado):
             escrita.writelines(manter)
         print(f"\n{video_selecionado} foi removido da lista: {listaEscolha}")
 
+def remover_lista(email_usuario):
+    todas_listas = []
+    try:
+        with open('nomeLista.txt') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes) == 2 and partes[0] == email_usuario:
+                    todas_listas.append(partes[1])
+    except FileNotFoundError:
+        print("Não há listas para excluir")
+        return
+    
+    if not todas_listas:
+        print("Nenhuma lista foi encontrada")
+        return
+    
+    print("\nQual das listas abaixo você deseja excluir permanentemente?")
+    for i, nome in enumerate(todas_listas, 1):
+        print(f"{i} - {nome}")
 
+    try:
+        opcaoUsuarioExcluir = int(input("\nDigite o número da lista que deseja excluir: "))
+        nome_deletar = todas_listas[opcaoUsuarioExcluir-1]
+    except (ValueError, IndexError):
+            print("Opção inválida")
+            return
+
+    confirmar = input(f"Você tem certeza que deseja excluir a lista: '{nome_deletar}'? e TODOS os vídeos dela? [digite s]-> para excluir [digite n]->Para não excluir: ")
+    if confirmar.lower() != 's':
+            print("Deletar foi cancelado")
+            return
+        
+    #Remover do 'nomeListas.txt'
+    linhas_restantes = []
+    with open('nomeLista.txt') as lista:
+        for linha in lista:
+            if linha.strip() != f"{email_usuario}\t{nome_deletar}":
+                linhas_restantes.append(linha)
+
+    with open('nomeLista.txt', 'w') as lista:
+        lista.writelines(linhas_restantes)
+
+    #Remover do 'detalheFavoritos.txt'
+    linhas_restantes_detalhe = []
+    try:
+        with open('detalheFavoritos.txt') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes) == 3:
+                    email, lista, video = partes
+                    if email==email_usuario and lista == nome_deletar:
+                        continue
+
+                linhas_restantes_detalhe.append(linha)
+        with open('detalheFavoritos.txt', 'w') as lista:
+            lista.writelines(linhas_restantes_detalhe)
+    except FileNotFoundError:
+        print("Não há listas")
+        pass
+
+    print(f"\nA lista '{nome_deletar}' e todos os vídeos dentro dela foram excluídos com sucesso!")
 
 # Parte adm função
 def menu_principal_adm():
@@ -601,8 +702,8 @@ def menu_principal_adm():
         print("\n \n Navegação: Login do administrador >> Menu")
         print("==== MENU ====")
         print("---Livro---")
-        print("1- Cadastrar livro")
-        print("2- Excluir livro")
+        print("1- Cadastrar vídeo")
+        print("2- Excluir vídeo")
         print("---Usuário---")
         print("3- Consultar usuário")
         print("4- Consultar estatísticas")
@@ -611,15 +712,12 @@ def menu_principal_adm():
         opcaoAdm = input("O que você deseja fazer? ")
 
         if opcaoAdm == "1":
-            print("\n--Cadastrar livro--")
-            nome=input("Digite o nome do livro: ")
-            livros.append(nome)
-            print("Livro cadastrado com sucesso!")
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Cadastrar vídeo")
+            cadastrar_video()
         
         elif opcaoAdm == "2":
-            print("\n--Excluir livro--")
-            nome=input("Nome do livro que deseja deletar: ")
-            print("livro excluido com sucesso!")
+            print("\n Navegação: Login do administrador >> Menu >> Excluir vídeo")
+            excluir_video()
 
         elif opcaoAdm == "3":
             consultar_usuarios()
@@ -627,9 +725,80 @@ def menu_principal_adm():
         elif opcaoAdm == "4":
             consulta_estatistica()
 
-        
         elif opcaoAdm == "5":
             break
+
+def cadastrar_video():
+    print("\n Navegação: Login do administrador >> Menu >> Consultar vídeos")
+    print("--- CADASTRAR NOVO VÍDEO ---")
+    print("Obs: utilize '\\n' para pular linha na sinopse")
+    titulo = input("Título: ").strip()
+    sinopse = input("Sinopse: ").strip()
+    duracao = input("Duração do vídeo: ").strip()
+    genero = input("Gênero: ").strip()
+    autor = input("Autor: ").strip()
+
+    with open('videos.txt', 'a', encoding='utf-8') as lista:
+        lista.write(f"{titulo}\t{sinopse}\t{duracao}\t{genero}\t{autor}\n")
+    print(f"\nVídeo '{titulo}' cadastrado com sucesso!")
+
+def excluir_video():
+    todosVideos = []
+    try:
+        with open('videos.txt', encoding='utf-8') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes)>=1:
+                    todosVideos.append(partes[0])
+    except FileNotFoundError:
+        print("Arquivo não encontrado")
+        return
+    if not todosVideos:
+        print("Não há vídeos para excluir")
+        return
+    
+    print("--- EXCLUSÃO DE VÍDEO ---")
+    for i,titulo in enumerate(todosVideos, 1):
+        print(f"{i} - {titulo}")
+
+    try:
+        escolhaAdmExcluir = int(input("Digite o número do vídeo que deseja excluir: "))
+        videoApagar = todosVideos[escolhaAdmExcluir-1]
+    except (ValueError, IndexError):
+        print("É inválido")
+        return
+    
+    confirmarEscolha = input(f"Essa ação irá REMOVER o vídeo: '{videoApagar}' do sistema. Você deseja mesmo excluir? [digite s]-> para excluir [digite n]->Para não excluir: ")
+    if confirmarEscolha.lower() != 's':
+        print("A ação remover foi cancelada!")
+        return
+    # Remover vídeo do arquivo 'videos.txt'
+    armazenar_video = []
+    with open('videos.txt', encoding='utf-8') as lista:
+        for linha in lista:
+            if not linha.strip().startswith(videoApagar + "\t"):
+                armazenar_video.append(linha)
+
+    with open('videos.txt', 'w', encoding='utf-8') as lista:
+        lista.writelines(armazenar_video)
+
+    # Remover o vídeo do arquivo 'detalheFavoritos'
+    armazenar_favoritos = []
+    try:
+        with open('detalheFavoritos.txt', encoding='utf-8') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes) ==3 and partes[2] != videoApagar:
+                    armazenar_favoritos.append(linha)
+                elif len(partes) !=3:
+                    armazenar_favoritos.append(linha)
+        with open('detalheFavoritos.txt', 'w', encoding='utf-8') as lista:
+            lista.writelines(armazenar_favoritos)
+    except FileNotFoundError:
+        print("Não há favoritos!")
+        pass
+
+    print(f"O vídeo: '{videoApagar}' foi excluído do sistema!")
 
 def consultar_usuarios():
     while True: 
@@ -638,76 +807,81 @@ def consultar_usuarios():
         print("1- Consultar um usuário especifíco")
         print("2- Consultar lista de todos os usuários")
         print("3- Sair")
-        opcaoConsultarUsu = int(input("O que você deseja fazer?: "))
+        try:
+            opcaoConsultarUsu = int(input("O que você deseja fazer?: "))
 
-        if opcaoConsultarUsu == 3:
-            break
-        elif opcaoConsultarUsu == 2:
-            todos_usuarios()
-        elif opcaoConsultarUsu == 1:
-            especifico_usuario()
+            if opcaoConsultarUsu == 3:
+                break
+            elif opcaoConsultarUsu == 2:
+                todos_usuarios()
+            elif opcaoConsultarUsu == 1:
+                especifico_usuario()
+
+        except ValueError:
+            print("Opção inválida")
 
 def todos_usuarios():
-    while True:
-        print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Lista de todos os usuários")
-        print("--Lista de todos os usuários--")
+    print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Lista de todos os usuários")
+    print("--Lista de todos os usuários--")
+    try:
         with open('cadastroUsuarios.txt') as usuarios:
             listaTodosUsuarios = [linha.split() for linha in usuarios]
             print(listaTodosUsuarios)
-
-        opcaoConsultarTodos= input("Você deseja sair? Digite [s] para sair ou digite [n] para permanecer: ")
-        if opcaoConsultarTodos.lower() == 's':
-            break
-        elif opcaoConsultarTodos.lower == 'n':
-            continue
+    except FileNotFoundError:
+        print("Não há arquivo (ainda não há nenhum usuário cadastrado)")
 
 def especifico_usuario():
-    with open('cadastroUsuarios.txt') as usuarios:
+    print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Lista de um usuário específico")
+    try:
+        with open('cadastroUsuarios.txt') as usuarios:
             listaTodosUsuarios = [linha.split() for linha in usuarios]
-    while True:
-        print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Procurar usuário em específico")
-        print("--Procurar usuário em específico--")
-        print("1- Pesquisar por nome do usuário")
-        print("2- Pesquisar por email do usuário")
-        print("3- Sair")
+        while True:
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Procurar usuário em específico")
+            print("--Procurar usuário em específico--")
+            print("1- Pesquisar por nome do usuário")
+            print("2- Pesquisar por email do usuário")
+            print("3- Sair")
 
-        opcaoConsultarEspecifico = int(input("O que você deseja fazer: "))
+            try:
+                opcaoConsultarEspecifico = int(input("O que você deseja fazer: "))
 
-        if opcaoConsultarEspecifico == 1:
-            buscaNome = input("Digite sua busca: ").strip()
-            for usuario in listaTodosUsuarios:
-                nome = usuario[0]
+                if opcaoConsultarEspecifico == 1:
+                    buscaNome = input("Digite sua busca: ").strip()
+                    for usuario in listaTodosUsuarios:
+                        nome = usuario[0]
 
-                if nome == buscaNome:
-                    print(f"O usuário: '{buscaNome}' foi encontrado na lista --> {usuario}")
-                    break
+                        if nome == buscaNome:
+                            print(f"O usuário: '{buscaNome}' foi encontrado na lista --> {usuario}")
+                            break
             
-            else:
-                print("Usuário não encontrado!")
+                    else:
+                        print("Usuário não encontrado!")
 
-        elif opcaoConsultarEspecifico == 2:
-            buscaEmail = input("Digite sua busca: ").strip()
-            for usuario in listaTodosUsuarios:
-                email = usuario[1]
+                elif opcaoConsultarEspecifico == 2:
+                    buscaEmail = input("Digite sua busca: ").strip()
+                    for usuario in listaTodosUsuarios:
+                        email = usuario[1]
 
-                if email == buscaEmail:
-                    print(f"O email: '{buscaEmail}' foi encontrado na lista --> {usuario}")
+                        if email == buscaEmail:
+                            print(f"O email: '{buscaEmail}' foi encontrado na lista --> {usuario}")
+                            break
+
+                    else:
+                        print("Email não encontrado!")
+
+                elif opcaoConsultarEspecifico == 3:
                     break
-
-            else:
-                print("Email não encontrado!")
-
-        elif opcaoConsultarEspecifico == 3:
-            break
+            except ValueError:
+                print("Opção inválida")
+    except FileNotFoundError:
+        print("Não há arquivo (ainda não há nenhum usuário cadastrado)")
 
 def consulta_estatistica():
-    # Estatísticas do sistema
-    livros_curtidos = []
-    usuarios = []
-    curtidas = []
 
     while True:
-        print("\n--Estatísticas--")
+        print("-"*20)
+        print("\n\n\n\n\n\n\n Navegação: Login do administrador >> Menu >> Consultar estatísticas")
+        print("\n\n--Estatísticas--")
         print("1-Total de usuários")
         print("2-Total de livros")
         print("3-Curtidas de um livro específico")
@@ -716,60 +890,276 @@ def consulta_estatistica():
         print("6-Top 5 livros mais curtidos")
         print("7-Sair")
     
-        opcao=input("Escolha a sua opção administrador:")
+        opcao=input("\nEscolha a sua opção administrador:")
     
     # Código para mostrar total de usuários
         if opcao == "1":
-            print("\n Visualizar total de usuários:")
-            print(f"Total de usuários: {len(usuarios)}")
-            pass
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Consultar estatísticas >> Total de usuários")
+            total_usuarios()
         
         elif opcao == "2":
-        # Código para mostrar total de livros
-            print("\n Visualizar total de livros:")
-            print(f"Total de livros: {len(livros)}")
-            pass
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Consultar estatísticas >> Total de livros")
+            total_livros()
         
         elif opcao == "3":
-            print("\n Visualizar curtidas de um livro específico:")
-            livro_especifico = input("Digite o nome do livro para ver as curtidas:")
-        # Código para mostrar curtidas de um livro específico
-            if livro_especifico in livros_curtidos:
-                print(f"{livro_especifico}: {livros_curtidos[livro_especifico]} curtidas")
-            else:
-                print("Livro não encontrado.")
-            pass
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Consultar estatísticas >> Curtidas de um livro específico")
+            print("\n --- Visualizar curtidas de um livro específico: ---")
+            ver_curtidas()
         
         elif opcao == "4":
-            print("\n Visualizar livros populares:")
-            livros_populares = []
-            for livro, curtida in livros_curtidos:
-                if curtida > 7:
-                    livros_populares.append(livro)
-            print("Livros populares:", ", ".join(livros_populares))
-        # Código para mostrar livros populares
-            pass
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Consultar estatísticas >> Livros populares")
+            print("\n--- Visualizar livros populares: ---")
+            visualizar_populares()
         
         elif opcao == "5":
-            print("\n Visualizar informações dos livros:")
-            for nome, info in livros.items():
-                print(f"{nome}: {info}")
-                pass
-        # Código para mostrar informações dos livros
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Consultar estatísticas >> Informações dos livros")
+            pesquisaAdm()
+
         elif opcao == "6":
-            print("\n Visualizar top 5 livros mais curtidos:")
-            livros_curtidos = sorted(curtidas.items(), key=lambda x: x[1], reverse=True)
-            for livro, curtida in livros_curtidos[:5]:
-                print(f"{livro}: {curtida} curtidas")
-        # Código para mostrar top 5 livros mais curtidos
-                pass
+            print("\n Navegação: Login do administrador >> Menu >> Consultar usuário >> Consultar estatísticas >> Top 5 livros mais curtidos")
+            print("\n--- Visualizar top 5 livros mais curtidos: ---")
+            top_cinco()
         
         elif opcao == "7":
             print("Saindo do sistema de estatísticas...")
             break
 
+def total_usuarios():
+    print("\n--- TOTAL USUÁRIOS ---")
+    try:
+        with open('cadastroUsuarios.txt') as lista:
+            # lista.readlines() cria uma lista com todas as linhas
+            totalUsu= len(lista.readlines())
+            print(f"Total de usuários cadastrados no sistema: {totalUsu}")
+    except FileNotFoundError:
+        print("Não há arquivo de usuários")
+
+def total_livros():
+    print("\n---TOTAL LIVROS ---")
+    try:
+        with open('videos.txt', encoding='utf-8') as lista:
+            # lista.readlines() cria uma lista com todas as linhas
+            totalLivro= len(lista.readlines())
+            print(f"Total de livros cadastrados no sistema: {totalLivro}")
+    except FileNotFoundError:
+        print("Não há arquivo de livros registrados")
+
+def ver_curtidas():
+    todos_livros = []
+    try:
+        with open('videos.txt', encoding='utf-8') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes)>=1:
+                    todos_livros.append(partes[0])
+    except FileNotFoundError:
+        print("Vídeos não encontrados")
+        return
+    
+    if not todos_livros:
+        print("Não há livros cadastrados")
+        return
+    print("\n--- QUAL LIVRO DESEJA VER CURTIDAS ---")
+    for i, titulo in enumerate(todos_livros, 1):
+        print(f"{i} - {titulo}")
+    
+    escolhaAdmLivro = input("Digite o nome ou o número do vídeo: ").strip().lower()
+    livroSelecionado = None
+
+    if escolhaAdmLivro.isdigit():
+        indice = int(escolhaAdmLivro)-1
+        if 0 <= indice <len(todos_livros):
+            livroSelecionado = todos_livros[indice]
+    
+    if not livroSelecionado:
+        for livro in todos_livros:
+            if escolhaAdmLivro == livro.lower():
+                livroSelecionado = livro
+                break
+    
+    if livroSelecionado:
+        contador = 0
+        try:
+            with open('curtidaLivros.txt') as lista:
+                for linha in lista:
+                    partes = linha.strip().split('\t')
+                    if len(partes)==2:
+                        nomeLivroArquivo = partes[1].strip()
+                        if nomeLivroArquivo.lower()==livroSelecionado.lower():
+                            contador+=1
+            print("\n"+'='*10)
+            print(f"Livro selecionado: '{livroSelecionado.upper()}'")
+            print(f"Total de curtidas: {contador}")
+            print("="*10)
+        except FileNotFoundError:
+            print(f"\nO livro selecionado: '{livroSelecionado.upper()}' não possui curtidas")
+    else:
+        print("Opção inválida")
+
+def visualizar_populares():
+    contagem_todos_curtidos = {}
+    try:
+        with open('curtidaLivros.txt') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes) ==2:
+                    # Pegar o nome do vídeo
+                    video = partes[1]
+
+                    if video in contagem_todos_curtidos:
+                        contagem_todos_curtidos[video] +=1
+                    else:
+                        contagem_todos_curtidos[video]=1
+    except FileNotFoundError:
+        print("Arquivo não encontrado")
+        return
+    if not contagem_todos_curtidos:
+        print("Não há favoritos no sistema")
+
+    #Ordenar votos
+    ranking = sorted(contagem_todos_curtidos.items(), key=lambda item: item[1], reverse=True)
+    print("\nOs 3 vídeos mais populares!!")
+    print("="*10)
+    for i, (video, favoritos) in enumerate(ranking[:3],1):
+        if i==1:
+            medalha = "🥇 "
+        elif i==2:
+            medalha = "🥈 "
+        elif i==3:
+            medalha = "🥉 "
+        print(f"{medalha}{i}° Lugar: {video}")
+    print("="*10)
+
+def pesquisaAdm():
+    livros_armazenados = []
+    try:
+        with open('videos.txt', encoding='utf-8') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes)>=1:
+                    livros_armazenados.append(partes[0].lower())
+    except FileNotFoundError:
+        print("O arquivo não foi encontrado")
+
+            #Mostrar opções
+    if livros_armazenados:
+        print("=== Todos os vídeos disponíveis ===")
+        for i, nome in enumerate(livros_armazenados, 1):
+            print(f"{i} - {nome}")
+        print("-----------------------------------------")
+
+            #Pedir para o usuário buscar vídeo
+        busca = input("\nDigite o nome ou o número do vídeo acima: ").strip().lower()
+            #Verificar se o usuário digitou o nome ou número
+        videoEncontrado = None
+
+            #Se digitou o número
+        if busca.isdigit(): #is digit() é uma função de string usada para verificar se todos os caracteres em uma string são dígitos numéricos (0-9).
+            indice = int(busca)-1
+            if 0<=indice<len(livros_armazenados):
+                videoEncontrado = livros_armazenados[indice]
+            
+            #Verificar se o texto existe
+        if not videoEncontrado:
+            for livro in livros_armazenados:
+                if busca == livro.lower():
+                    videoEncontrado = livro
+                    break
+        if videoEncontrado:
+            print("Encontrado!")
+            info_livroAdm(videoEncontrado)
+        else:
+            print("Não encontrado!")
+    else:
+        print("Não há vídeos cadastrados")
+
+
+def info_livroAdm(nome_video):
+    while True:
+        print("------------------------------------------------------------------------------")
+        print(f"\n==== OBTER INFORMAÇÕES DO VÍDEO {nome_video} ===")
+        print("Continuar para visualizar as informações do vídeo [digite c]")
+        print("Sair [digite s]")
+        print("\n")
+        acaoUsuarioInfo = input("O que você deseja fazer? ")
+        if acaoUsuarioInfo=='c' or acaoUsuarioInfo=="C": #É necessário você tranformar isso em DOCUMENTO ou DICIONÁRIO
+            print("Visualizando Sinopse, Autor, Duração e Gênero do vídeo:\n")
+            try:
+                with open('videos.txt', encoding='utf-8') as lista:
+                    for linha in lista:
+                        partes = linha.strip().split('\t')
+
+                        if len(partes)==5:
+                            titulo, sinopse, duracao, genero, autor = partes
+
+                            if titulo.lower() == nome_video:
+                                formatarSinopse = sinopse.replace("\\n", "\n")
+                                print("\n"+"="*10)
+                                print(f"TÍTULO: {titulo.upper()}")
+                                print("-"*10)
+                                print(f"SINOPSE: {formatarSinopse}")
+                                print(f"DURAÇÃO: {duracao}")
+                                print(f"GÊNERO: {genero}")
+                                print(f"AUTOR: {autor}")
+                                print("="*10)
+                                break
+            except FileNotFoundError:
+                print("O arquivo não existe")
+
+        elif acaoUsuarioInfo=='s' or acaoUsuarioInfo=='S':
+            break
+
+def top_cinco():
+    contagem_todos_curtidos = {}
+    try:
+        with open('curtidaLivros.txt') as lista:
+            for linha in lista:
+                partes = linha.strip().split('\t')
+                if len(partes) ==2:
+                    # Pegar o nome do vídeo
+                    video = partes[1]
+
+                    if video in contagem_todos_curtidos:
+                        contagem_todos_curtidos[video] +=1
+                    else:
+                        contagem_todos_curtidos[video]=1
+    except FileNotFoundError:
+        print("Arquivo não encontrado")
+        return
+    if not contagem_todos_curtidos:
+        print("Não há favoritos no sistema")
+
+    #Ordenar votos
+    ranking = sorted(contagem_todos_curtidos.items(), key=lambda item: item[1], reverse=True)
+    print("\nOs 5 vídeos mais votados!!")
+    print("="*10)
+    for i, (video, favoritos) in enumerate(ranking[:5],1):
+        if i==1:
+            medalha = "🥇 "
+        elif i==2:
+            medalha = "🥈 "
+        elif i==3:
+            medalha = "🥉 "
+        else:
+            medalha = ""
+        print(f"{medalha}{i}° Lugar: {video}")
+        print(f"  Total de {favoritos} favoritados no sistema")
+    print("="*10)
+
+def logo():
+    logo = r'''
+    _____  _____ ___    _______      __
+    |  ___| ____|_ _|   |_   _\ \   / /
+    | |_  |  _|  | |      | |  \ \ / / 
+    |  _| | |___ | |      | |   \ V /  
+    |_|   |_____|___|     |_|    \_/
+    '''
+    
+    print(logo)
+
 # Informações iniciais para o usuário (Essa é a primeira coisa que o usuário visualiza)
 print("====Seja bem-vindo!====")
+logo()
 print("Já possui uma conta ou deseja criar uma?")
 print("//Digite [a] para entrar em conta corporativa// -> Acesso apenas para funcionários")
 possuiConta = str(input("Digite [s] se já possui conta usuário ou digite [n] se não possue conta usuário: "))
@@ -812,8 +1202,11 @@ elif possuiConta == "a" or possuiConta=="A":
         email = input("Digite seu email: ")
         senha = input("Digite sua senha: ")
         print("\n")
-        print("Acesso com sucesso. Bem-vindo,administrador!")
-        menu_principal_adm()
+        if adm=='adm' and email=='adm' and senha=='adm':
+            print("Acesso com sucesso. Bem-vindo,administrador!")
+            menu_principal_adm()
+        else:
+            print("Login inválido")
     else:
         print("\n")
         print("Ocorreu um erro, o tipo de caractere que você digitou não faz parte do que foi solicitado")
@@ -822,4 +1215,3 @@ elif possuiConta == "a" or possuiConta=="A":
 else:
     print("\n")
     print("Ocorreu um erro, o tipo de caractere que você digitou não faz parte do que foi solicitado")
-
